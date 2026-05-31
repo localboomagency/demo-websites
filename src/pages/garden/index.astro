@@ -1158,6 +1158,9 @@
     .hero-ctas { flex-direction: column; }
     .btn-primary, .btn-secondary { justify-content: center; }
 
+    /* Shrink section height so flex centering puts ~50% less gap at top */
+    .hero { height: calc(100vh - 110px); min-height: 480px; }
+
     /* Keep hero above the fold on 375×667 */
     .hero-trust { margin-bottom: 0.6rem; }
     .eyebrow { margin-bottom: 0.35rem; }
