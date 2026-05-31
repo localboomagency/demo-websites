@@ -57,8 +57,9 @@
             <a href="#trial" class="btn-outline">Book a Free Trial</a>
           </div>
         </div>
-        <!-- PLACEHOLDER: replace with real gym photo at /images/gym/hero.jpg -->
-        <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-image">
+          <img src="/images/gym/hero.jpg" alt="Athlete loading a barbell at Peak Performance Gym" />
+        </div>
       </div>
     </section>
 
@@ -398,7 +399,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 48px 32px 44px;
+    padding: 48px 0 44px;
     background: var(--dark);
     position: relative;
     border-bottom: 1px solid var(--border);
@@ -554,7 +555,6 @@
   }
 
   .hero-image {
-    background: linear-gradient(150deg, var(--surface) 0%, #111 100%);
     border: 1px solid var(--border-light);
     border-radius: 4px;
     min-height: 480px;
@@ -562,11 +562,21 @@
     overflow: hidden;
   }
 
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
   .hero-image::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(245, 210, 10, 0.05) 0%, transparent 60%);
+    background: linear-gradient(135deg, rgba(8, 8, 8, 0.25) 0%, transparent 60%);
+    pointer-events: none;
   }
 
   /* ── Trust Bar ── */
@@ -628,7 +638,7 @@
 
   /* ── Classes ── */
   .classes {
-    padding: 100px 32px;
+    padding: 100px 0;
     border-bottom: 1px solid var(--border);
   }
 
@@ -691,7 +701,7 @@
 
   /* ── Reviews ── */
   .reviews {
-    padding: 100px 32px;
+    padding: 100px 0;
     background: var(--card);
     border-bottom: 1px solid var(--border);
   }
@@ -787,7 +797,7 @@
 
   /* ── About ── */
   .about {
-    padding: 100px 32px;
+    padding: 100px 0;
     border-bottom: 1px solid var(--border);
   }
 
@@ -854,7 +864,7 @@
 
   /* ── Contact ── */
   .contact {
-    padding: 100px 32px;
+    padding: 100px 0;
     background: var(--dark);
     border-top: 1px solid var(--border);
   }
@@ -991,7 +1001,7 @@
   footer {
     background: var(--dark);
     border-top: 1px solid var(--border);
-    padding: 56px 32px 32px;
+    padding: 56px 0 32px;
   }
 
   .footer-inner {
@@ -1098,9 +1108,9 @@
 
   @media (max-width: 768px) {
     .nav-links { display: none; }
-    .classes, .reviews, .about, .contact { padding: 72px 16px; }
+    .classes, .reviews, .about, .contact { padding: 72px 0; }
     .container { padding: 0 16px; }
-    .hero { padding: 40px 16px 36px; }
+    .hero { padding: 40px 0 36px; }
     .trust-inner { flex-wrap: wrap; }
     .trust-item { padding: 20px 32px; }
     .reviews-header { flex-direction: column; align-items: flex-start; }
