@@ -9,4 +9,9 @@ export const sites = [
     path: '/gym',
     screenshot: '/screenshots/gym.svg',
   },
+  {
+    name: 'Greenleaf Garden Services',
+    path: '/garden',
+    screenshot: '/screenshots/garden.svg',
+  },
 ];

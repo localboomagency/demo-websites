@@ -51,6 +51,15 @@ For local business sites the H1 must capture the service and location so it read
 
 The subheading under the H1 can be warmer and more persuasive.
 
+### 4a. H1 location — Devon, UK
+Unless the user specifies a different location, all demo sites must use a town or city in Devon, UK. Default to higher-population locations when no preference is given. Suitable defaults, in rough population order: Exeter, Plymouth, Torquay, Paignton, Barnstaple, Exmouth, Newton Abbot, Tiverton, Bideford, Sidmouth.
+
+Examples from this project:
+- Gym: "Independent Private Gym in Exeter"
+- Bakery: "Artisanal Bakery in Plymouth City Centre"
+
+If the user supplies a specific location (Devon or otherwise), use that instead.
+
 ### 5. Hero — above the fold
 The entire hero must be visible without scrolling on both desktop (1280×800) and mobile (375×667). This means:
 - Keep H1 font sizes confident but not oversized — `clamp(2rem, 5vw, 3.25rem)` is a safe ceiling for most sites
@@ -143,7 +152,17 @@ Standards to hit:
 - **No em dashes** — never use em dashes (—) in any generated copy. Use a comma, colon, or rewrite the sentence instead.
 
 ### Design inspiration
-The user maintains a folder of reference websites outside this project. When building a new demo, ask if they have any relevant examples to share. Reference them for layout, typographic mood, and colour direction — do not copy, use as inspiration.
+Reference screenshots are stored in the `reference/` folder at the project root, organised by business type:
+
+```
+reference/
+  bakery/       ← bakery, café, deli, food retail
+  gym/          ← gym, fitness studio, personal training
+  plumber/      ← plumber, trades, home services
+  general/      ← layout patterns, hero styles, typography — applies to any demo
+```
+
+When starting a new demo, check the relevant subfolder (and `general/`) for inspiration. Also ask the user if they have new examples to add. Use reference screenshots for layout, typographic mood, and colour direction — do not copy, use as inspiration.
 
 ---
 
@@ -192,4 +211,10 @@ public/
   screenshots/            ← card thumbnails for the index page
   images/
     [demo-name]/          ← images provided by the user for a specific demo
+
+reference/                ← design inspiration screenshots (not web-served)
+  bakery/
+  gym/
+  plumber/
+  general/                ← layout / hero / typography patterns for any demo
 ```
