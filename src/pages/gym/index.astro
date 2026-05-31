@@ -6,187 +6,302 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peak Performance — Train Like You Mean It</title>
+    <title>Peak Performance Gym — London Fields</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
 
+    <!-- 1. NAV -->
     <nav>
-      <div class="nav-inner">
-        <a href="/" class="back-link">&#8592; Back to demos</a>
+      <div class="container nav-inner">
         <span class="logo">PEAK</span>
-        <a href="#join" class="nav-cta">Join Now</a>
+        <div class="nav-links">
+          <a href="#classes">Classes</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#about">About</a>
+          <a href="#trial">Contact</a>
+        </div>
+        <a href="tel:02071234567" class="nav-phone">
+          <!-- PLACEHOLDER: phone number -->
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          020 7123 4567
+        </a>
       </div>
     </nav>
 
+    <!-- 2. HERO -->
     <section class="hero">
-      <div class="hero-inner">
-        <p class="eyebrow">Est. 2019 &nbsp;&middot;&nbsp; London Fields</p>
-        <h1>Train<br />like you<br />mean it.</h1>
-        <p class="hero-sub">No machines. No mirrors. No excuses. Just barbell, bodyweight, and the work that changes everything.</p>
-        <div class="hero-actions">
-          <a href="#join" class="btn-primary">Start Free Trial</a>
-          <a href="#classes" class="btn-outline">View Classes</a>
-        </div>
-      </div>
-      <div class="hero-scroll">&#8595;</div>
-    </section>
-
-    <section class="stats">
-      <div class="stat">
-        <span class="stat-num">1,200+</span>
-        <span class="stat-label">Members</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">40+</span>
-        <span class="stat-label">Classes weekly</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">6am–10pm</span>
-        <span class="stat-label">Open daily</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">5&#9733;</span>
-        <span class="stat-label">Average rating</span>
-      </div>
-    </section>
-
-    <section class="features">
-      <div class="container">
-        <p class="section-label">Why Peak</p>
-        <h2>Different by design</h2>
-        <div class="features-grid">
-          <div class="feature">
-            <span class="feature-icon">&#9889;</span>
-            <h3>High-intensity classes</h3>
-            <p>HIIT, Olympic lifting, kettlebell circuits, and metabolic conditioning &mdash; all programmed by coaches who compete.</p>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Est. 2019 &nbsp;&middot;&nbsp; London Fields</p>
+          <h1>Gym in<br />London Fields.</h1>
+          <p class="hero-sub">No machines. No mirrors. No excuses. Just barbell, bodyweight, and expert coaching that changes everything.</p>
+          <ul class="hero-bullets">
+            <li>Expert coaching in every session, no exceptions</li>
+            <li>40+ classes per week across all levels</li>
+            <li>First session completely free &mdash; no hard sell</li>
+          </ul>
+          <!-- PLACEHOLDER: replace with real Google review data -->
+          <div class="google-review">
+            <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#4285F4" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.9 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 2.9l5.7-5.7C34.5 6.5 29.5 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#EA4335" d="M6.3 14.7l6.6 4.8C14.6 16.1 19 13 24 13c3.1 0 5.8 1.1 8 2.9l5.7-5.7C34.5 6.5 29.5 4 24 4 16.3 4 9.7 8.4 6.3 14.7z"/><path fill="#FBBC05" d="M24 44c5.2 0 9.9-1.9 13.4-5.1l-6.2-5.2C29.3 35.3 26.8 36 24 36c-5.2 0-9.7-3.1-11.3-7.9l-6.5 5.1C9.6 39.5 16.3 44 24 44z"/><path fill="#34A853" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.3 5.6l6.2 5.2C37 39 44 33 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg>
+            <span class="review-stars-hero">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="review-text-hero">4.9 &nbsp;&middot;&nbsp; 386 reviews on Google</span>
           </div>
-          <div class="feature">
-            <span class="feature-icon">&#127947;</span>
-            <h3>Expert coaching</h3>
-            <p>Every session is coached. Every rep is watched. Our trainers hold professional certifications and won&rsquo;t let you cheat a squat.</p>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">&#128202;</span>
-            <h3>Tracked progress</h3>
-            <p>Our app tracks every lift, every sprint, every PR. Watch your numbers move &mdash; it&rsquo;s addictive.</p>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">&#129309;</span>
-            <h3>Real community</h3>
-            <p>The people here will remember your name by session two. We celebrate each other&rsquo;s wins. That&rsquo;s not marketing &mdash; it&rsquo;s just how it is.</p>
+          <div class="hero-actions">
+            <a href="tel:02071234567" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Call: 020 7123 4567
+            </a>
+            <a href="#trial" class="btn-outline">Book a Free Trial</a>
           </div>
         </div>
+        <!-- PLACEHOLDER: replace with real gym photo at /images/gym/hero.jpg -->
+        <div class="hero-image" aria-hidden="true"></div>
       </div>
     </section>
 
+    <!-- 3. TRUST BAR -->
+    <div class="trust-bar">
+      <div class="container trust-inner">
+        <div class="trust-item">
+          <span class="trust-num">Est. 2019</span>
+          <span class="trust-label">5 years strong</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num">1,200+</span>
+          <span class="trust-label">Active members</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num">40+</span>
+          <span class="trust-label">Classes per week</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num">4.9&#9733;</span>
+          <span class="trust-label">386 Google reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. SERVICES / CLASSES -->
     <section class="classes" id="classes">
       <div class="container">
-        <p class="section-label">The Schedule</p>
-        <h2>This week&rsquo;s classes</h2>
-        <div class="class-list">
-          <div class="class-item">
-            <span class="class-tag">Mon&ndash;Fri</span>
-            <div class="class-info">
-              <h3>6am Barbell Club</h3>
-              <p>Start your day with compound lifts. Squat, deadlift, press. 60 minutes.</p>
-            </div>
-            <span class="class-spots">8 spots</span>
+        <p class="section-label">What we offer</p>
+        <h2>Classes &amp; Training</h2>
+        <div class="classes-grid">
+          <div class="class-card">
+            <span class="class-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+            <h3>HIIT</h3>
+            <p>High-intensity intervals engineered for fat loss and conditioning. 45 minutes. Maximum output. Scaled to your level.</p>
+            <span class="class-freq">Mon &middot; Wed &middot; Fri &middot; Sat</span>
           </div>
-          <div class="class-item">
-            <span class="class-tag">Mon / Wed / Fri</span>
-            <div class="class-info">
-              <h3>MetCon</h3>
-              <p>Metabolic conditioning. High intensity. Short rest. Maximum output.</p>
-            </div>
-            <span class="class-spots">12 spots</span>
+          <div class="class-card">
+            <span class="class-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="1" y="11" width="2.5" height="2" rx="0.5"/><rect x="4.5" y="9" width="2.5" height="6" rx="0.5"/><line x1="7" y1="12" x2="17" y2="12"/><rect x="17" y="9" width="2.5" height="6" rx="0.5"/><rect x="20.5" y="11" width="2.5" height="2" rx="0.5"/></svg></span>
+            <h3>Barbell Club</h3>
+            <p>The 6am session that builds champions. Squat, deadlift, press. Coached every rep. 60 minutes of serious work.</p>
+            <span class="class-freq">Mon &ndash; Fri, 6am</span>
           </div>
-          <div class="class-item">
-            <span class="class-tag">Tue / Thu</span>
-            <div class="class-info">
-              <h3>Olympic Lifting</h3>
-              <p>Snatch and clean &amp; jerk technique. All levels welcome. Coach-led.</p>
-            </div>
-            <span class="class-spots">6 spots</span>
+          <div class="class-card">
+            <span class="class-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></span>
+            <h3>Olympic Lifting</h3>
+            <p>Snatch and clean &amp; jerk technique taught properly. All levels welcome. You&rsquo;ll be surprised how quickly you progress.</p>
+            <span class="class-freq">Tue &middot; Thu</span>
           </div>
-          <div class="class-item">
-            <span class="class-tag">Sat / Sun</span>
-            <div class="class-info">
-              <h3>Weekend Warrior</h3>
-              <p>90-minute partner workout. Our most popular session. Book early.</p>
-            </div>
-            <span class="class-spots">20 spots</span>
+          <div class="class-card">
+            <span class="class-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z"/></svg></span>
+            <h3>MetCon</h3>
+            <p>Metabolic conditioning. Barbells, kettlebells, rowers. Short rest, maximum output. The session that earns your weekend.</p>
+            <span class="class-freq">Mon &middot; Wed &middot; Fri</span>
+          </div>
+          <div class="class-card">
+            <span class="class-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10M23 14l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg></span>
+            <h3>Mobility &amp; Recovery</h3>
+            <p>The session serious athletes actually need. Structured movement work that keeps you training longer and harder.</p>
+            <span class="class-freq">Tue &middot; Thu &middot; Sun</span>
+          </div>
+          <div class="class-card">
+            <span class="class-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+            <h3>Personal Training</h3>
+            <p>1-to-1 with a certified coach. Fully bespoke programming, nutrition guidance, and accountability that produces results.</p>
+            <span class="class-freq">By appointment</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="pricing" id="join">
+    <!-- 5. REVIEWS -->
+    <section class="reviews">
       <div class="container">
-        <p class="section-label">Membership</p>
-        <h2>Simple pricing</h2>
-        <div class="pricing-grid">
-          <div class="plan">
-            <h3>Flex</h3>
-            <p class="plan-price"><span class="price-num">&pound;55</span>/mo</p>
-            <p class="plan-desc">8 classes per month. Open gym access 7am&ndash;5pm on weekdays.</p>
-            <ul class="plan-features">
-              <li>8 class credits</li>
-              <li>App access</li>
-              <li>Progress tracking</li>
-              <li>Community access</li>
-            </ul>
-            <a href="#" class="btn-outline">Get started</a>
+        <div class="reviews-header">
+          <div>
+            <p class="section-label">Member reviews</p>
+            <h2>386 five-star ratings</h2>
           </div>
-          <div class="plan plan-featured">
-            <span class="plan-badge">Most popular</span>
-            <h3>Unlimited</h3>
-            <p class="plan-price"><span class="price-num">&pound;85</span>/mo</p>
-            <p class="plan-desc">Unlimited classes, full gym access, and one free PT session per month.</p>
-            <ul class="plan-features">
-              <li>Unlimited classes</li>
-              <li>Full gym access</li>
-              <li>1&times; PT session/mo</li>
-              <li>Priority booking</li>
-            </ul>
-            <a href="#" class="btn-primary">Get started</a>
+          <div class="rating-badge">
+            <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-score">4.9 on Google</span>
           </div>
-          <div class="plan">
-            <h3>Team</h3>
-            <p class="plan-price"><span class="price-num">&pound;65</span>/mo <span class="price-note">per person</span></p>
-            <p class="plan-desc">Groups of 4+. Everything in Unlimited, with corporate invoicing available.</p>
-            <ul class="plan-features">
-              <li>Unlimited classes</li>
-              <li>Full gym access</li>
-              <li>Group billing</li>
-              <li>Dedicated coach</li>
-            </ul>
-            <a href="#" class="btn-outline">Get started</a>
+        </div>
+        <!-- PLACEHOLDER: replace with real reviews -->
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>&ldquo;I&rsquo;ve been to a lot of gyms. Peak is different &mdash; the coaches actually coach, the community actually shows up, and I hit a 20kg PB on my deadlift within three months. Nothing else comes close.&rdquo;</blockquote>
+            <div class="reviewer">
+              <span class="reviewer-name">Daniel K.</span>
+              <span class="reviewer-location">Hackney</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>&ldquo;Nervous to join at first, but the team made me feel welcome immediately. Six months in and I can&rsquo;t imagine training anywhere else. The 6am barbell club is my favourite hour of the day.&rdquo;</blockquote>
+            <div class="reviewer">
+              <span class="reviewer-name">Priya S.</span>
+              <span class="reviewer-location">Bethnal Green</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>&ldquo;The programming here is the best I&rsquo;ve seen outside of competitive CrossFit boxes. If you want to get genuinely stronger &mdash; not just sweaty &mdash; this is the place. The coaches are world-class.&rdquo;</blockquote>
+            <div class="reviewer">
+              <span class="reviewer-name">Tom W.</span>
+              <span class="reviewer-location">Bow</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- 6. WHY US / ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="section-label">Why Peak</p>
+            <h2>Different by design</h2>
+            <p>Most gyms sell you a fob and leave you to it. Peak was built differently &mdash; every session is coached, every rep is watched, and your name will be known by your second visit.</p>
+            <p>We don&rsquo;t do machines or mirrored walls. We do barbells, expertise, and a community that shows up for each other. That&rsquo;s not a pitch &mdash; ask any of our 1,200 members.</p>
+          </div>
+          <div class="about-pillars">
+            <div class="pillar">
+              <span class="pillar-num">01</span>
+              <div class="pillar-body">
+                <strong>Expert coaching, every session</strong>
+                <p>All coaches hold professional certifications. No session goes unchecked. Technique comes before load, always.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-num">02</span>
+              <div class="pillar-body">
+                <strong>Results-led programming</strong>
+                <p>Every class is periodised. Nothing is random. You&rsquo;ll see measurable progress within eight weeks &mdash; we back that claim.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-num">03</span>
+              <div class="pillar-body">
+                <strong>A community that means it</strong>
+                <p>The people here will remember your name by session two. We celebrate each other&rsquo;s wins. That&rsquo;s just how it is.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT / TRIAL FORM -->
+    <section class="contact" id="trial">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="section-label">Book your free trial</p>
+            <h2>Come in and train for free</h2>
+            <p>Your first session is on us. No commitment, no hard sell. Just one session with a coach to see if Peak is the right fit for you.</p>
+            <ul class="contact-details">
+              <li>
+                <span class="detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <span>The Arches, London Fields, E8 3PA</span>
+              </li>
+              <li>
+                <span class="detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <a href="tel:02071234567">020 7123 4567</a>
+                <!-- PLACEHOLDER: phone number -->
+              </li>
+              <li>
+                <span class="detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                <a href="mailto:hello@peakperformance.co.uk">hello@peakperformance.co.uk</a>
+              </li>
+              <li>
+                <span class="detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <span>Monday &ndash; Friday: 6am &ndash; 10pm<br />Saturday &ndash; Sunday: 8am &ndash; 7pm</span>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Alex Johnson" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="07700 900000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="alex@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your goals</label>
+              <textarea id="message" name="message" rows="4" placeholder="What are you training for? Any injuries we should know about?"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Book My Free Trial</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FOOTER -->
     <footer>
       <div class="container">
         <div class="footer-inner">
-          <div>
+          <div class="footer-brand">
             <span class="footer-logo">PEAK</span>
-            <p>The Arches, London Fields, E8 3PA</p>
-            <p>hello@peakperformance.co.uk</p>
+            <p>The Arches, London Fields<br />London E8 3PA</p>
+            <div class="footer-social">
+              <span aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></span>
+              <span aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
+              <span aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></span>
+              <span aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span>
+            </div>
           </div>
-          <div class="footer-links">
-            <a href="#">Instagram</a>
-            <a href="#">Classes</a>
-            <a href="#">Membership</a>
-            <a href="/">Demo index</a>
+          <div class="footer-contact">
+            <a href="tel:02071234567">020 7123 4567</a>
+            <!-- PLACEHOLDER: phone number -->
+            <a href="mailto:hello@peakperformance.co.uk">hello@peakperformance.co.uk</a>
+          </div>
+          <div class="footer-hours">
+            <strong>Hours</strong>
+            <p>Mon &ndash; Fri &nbsp;&middot;&nbsp; 6am &ndash; 10pm</p>
+            <p>Sat &ndash; Sun &nbsp;&middot;&nbsp; 8am &ndash; 7pm</p>
           </div>
         </div>
-        <p class="footer-copy">&copy; 2024 Peak Performance Ltd</p>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Peak Performance Ltd</p>
+        </div>
       </div>
     </footer>
+
+    <!-- PLACEHOLDER: replace with real WhatsApp number -->
+    <a href="https://wa.me/441234567890" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.563 4.14 1.54 5.877L.057 23.882a.5.5 0 0 0 .611.611l6.054-1.489A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.875 9.875 0 0 1-5.034-1.378l-.36-.214-3.733.918.951-3.683-.234-.376A9.865 9.865 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/></svg>
+      <span class="whatsapp-label">WhatsApp</span>
+    </a>
 
   </body>
 </html>
@@ -195,16 +310,19 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --black: #0a0a0a;
-    --dark: #111111;
-    --card: #1a1a1a;
-    --border: #2a2a2a;
-    --yellow: #f0d500;
-    --yellow-dark: #d4bb00;
+    --black: #080808;
+    --dark: #0f0f0f;
+    --card: #161616;
+    --surface: #1c1c1c;
+    --border: #242424;
+    --border-light: #2e2e2e;
+    --yellow: #f5d20a;
+    --yellow-dim: #c4a708;
     --white: #ffffff;
-    --muted: #888888;
-    --display: 'Bebas Neue', sans-serif;
-    --body: 'Inter', sans-serif;
+    --muted: #707070;
+    --soft: #aaaaaa;
+    --display: 'Bebas Neue', Impact, sans-serif;
+    --body: 'Inter', system-ui, sans-serif;
   }
 
   body {
@@ -218,120 +336,207 @@
   nav {
     position: sticky;
     top: 0;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(8, 8, 8, 0.95);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     z-index: 100;
   }
 
   .nav-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px 24px;
-    display: flex;
-    justify-content: space-between;
+    height: 64px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
   }
 
-  .back-link {
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links a {
     font-size: 0.8125rem;
     color: var(--muted);
     text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     transition: color 0.2s;
   }
-  .back-link:hover { color: var(--white); }
+  .nav-links a:hover { color: var(--yellow); }
 
   .logo {
     font-family: var(--display);
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
+    font-size: 1.625rem;
+    letter-spacing: 0.12em;
     color: var(--yellow);
+    white-space: nowrap;
   }
 
-  .nav-cta {
-    background: var(--yellow);
-    color: var(--black);
-    padding: 8px 20px;
-    border-radius: 2px;
-    text-decoration: none;
+  .nav-phone {
+    justify-self: end;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: 0.8125rem;
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--dark);
+    background: var(--yellow);
+    text-decoration: none;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    padding: 0.45rem 0.875rem;
+    border-radius: 2px;
     transition: background 0.2s;
+    white-space: nowrap;
   }
-  .nav-cta:hover { background: var(--yellow-dark); }
+  .nav-phone:hover { background: #fff; }
 
   /* ── Hero ── */
   .hero {
-    min-height: calc(100vh - 57px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 80px 24px;
+    padding: 48px 32px 44px;
     background: var(--dark);
     position: relative;
     border-bottom: 1px solid var(--border);
+    overflow: hidden;
   }
 
-  .hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(245, 210, 10, 0.03) 100%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
 
   .eyebrow {
-    font-size: 0.8125rem;
-    letter-spacing: 0.12em;
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--yellow);
-    margin-bottom: 24px;
-    display: block;
+    margin-bottom: 28px;
+    font-weight: 500;
   }
 
   .hero h1 {
     font-family: var(--display);
-    font-size: clamp(5rem, 14vw, 10rem);
+    font-size: clamp(2.5rem, 5vw, 4.25rem);
     line-height: 0.95;
-    letter-spacing: 0.03em;
-    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    color: var(--white);
   }
 
   .hero-sub {
-    font-size: 1.0625rem;
+    font-size: 1rem;
     color: var(--muted);
-    max-width: 480px;
-    margin-bottom: 48px;
+    margin-bottom: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .hero-bullets {
+    list-style: none;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .hero-bullets li {
+    font-size: 0.9375rem;
+    color: var(--soft);
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: 300;
   }
 
-  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-bullets li::before {
+    content: '✓';
+    color: var(--yellow);
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 0.875rem;
+  }
+
+  .google-review {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 7px 14px;
+    margin-bottom: 20px;
+  }
+
+  .review-stars-hero {
+    color: var(--yellow);
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+  }
+
+  .review-text-hero {
+    font-size: 0.8125rem;
+    color: var(--muted);
+  }
+
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 
   .btn-primary {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: var(--yellow);
     color: var(--black);
-    padding: 14px 32px;
+    padding: 15px 32px;
     text-decoration: none;
     font-size: 0.875rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     border-radius: 2px;
-    transition: background 0.2s;
+    transition: background 0.2s, transform 0.15s;
   }
-  .btn-primary:hover { background: var(--yellow-dark); }
+  .btn-primary:hover {
+    background: var(--yellow-dim);
+    transform: translateY(-1px);
+  }
 
   .btn-outline {
     display: inline-block;
     color: var(--white);
-    padding: 14px 32px;
+    padding: 15px 32px;
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 500;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-light);
     border-radius: 2px;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, color 0.2s;
   }
-  .btn-outline:hover { border-color: var(--white); }
+  .btn-outline:hover {
+    border-color: var(--white);
+    color: var(--yellow);
+  }
 
   .hero-scroll {
     position: absolute;
@@ -345,148 +550,97 @@
 
   @keyframes bounce {
     0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(6px); }
+    50% { transform: translateX(-50%) translateY(7px); }
   }
 
-  /* ── Stats ── */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .hero-image {
+    background: linear-gradient(150deg, var(--surface) 0%, #111 100%);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    min-height: 480px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(245, 210, 10, 0.05) 0%, transparent 60%);
+  }
+
+  /* ── Trust Bar ── */
+  .trust-bar {
+    background: var(--dark);
     border-bottom: 1px solid var(--border);
   }
 
-  .stat {
-    padding: 36px 24px;
-    border-right: 1px solid var(--border);
+  .trust-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trust-item {
+    padding: 28px 52px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 5px;
   }
-  .stat:last-child { border-right: none; }
 
-  .stat-num {
+  .trust-num {
     font-family: var(--display);
-    font-size: 2.25rem;
+    font-size: 1.875rem;
     letter-spacing: 0.04em;
     color: var(--yellow);
     line-height: 1;
-    margin-bottom: 8px;
   }
 
-  .stat-label {
-    font-size: 0.8125rem;
-    color: var(--muted);
-    letter-spacing: 0.06em;
+  .trust-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .trust-divider {
+    width: 1px;
+    height: 40px;
+    background: var(--border);
+    flex-shrink: 0;
   }
 
   /* ── Shared ── */
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
 
   .section-label {
     display: block;
-    font-size: 0.75rem;
-    letter-spacing: 0.14em;
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--yellow);
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+    font-weight: 500;
   }
-
-  /* ── Features ── */
-  .features {
-    padding: 96px 24px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .features h2 {
-    font-family: var(--display);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    letter-spacing: 0.04em;
-    margin-bottom: 64px;
-  }
-
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-  }
-
-  .feature { background: var(--dark); padding: 40px 32px; }
-
-  .feature-icon { font-size: 1.75rem; display: block; margin-bottom: 20px; }
-
-  .feature h3 {
-    font-family: var(--display);
-    font-size: 1.375rem;
-    letter-spacing: 0.04em;
-    margin-bottom: 12px;
-  }
-
-  .feature p { font-size: 0.9375rem; color: var(--muted); font-weight: 300; line-height: 1.65; }
 
   /* ── Classes ── */
   .classes {
-    padding: 96px 24px;
-    background: var(--dark);
+    padding: 100px 32px;
     border-bottom: 1px solid var(--border);
   }
 
   .classes h2 {
     font-family: var(--display);
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 4.25rem);
     letter-spacing: 0.04em;
-    margin-bottom: 48px;
+    margin-bottom: 56px;
+    color: var(--white);
   }
 
-  .class-list { display: flex; flex-direction: column; }
-
-  .class-item {
-    background: var(--card);
-    padding: 28px 32px;
-    display: grid;
-    grid-template-columns: 160px 1fr auto;
-    gap: 24px;
-    align-items: center;
-    border: 1px solid var(--border);
-    border-top: none;
-  }
-  .class-item:first-child { border-top: 1px solid var(--border); }
-
-  .class-tag {
-    font-size: 0.8125rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--yellow);
-  }
-
-  .class-info h3 {
-    font-family: var(--display);
-    font-size: 1.25rem;
-    letter-spacing: 0.04em;
-    margin-bottom: 4px;
-  }
-
-  .class-info p { font-size: 0.9rem; color: var(--muted); font-weight: 300; }
-
-  .class-spots { font-size: 0.8125rem; color: var(--muted); white-space: nowrap; }
-
-  /* ── Pricing ── */
-  .pricing {
-    padding: 96px 24px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .pricing h2 {
-    font-family: var(--display);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    letter-spacing: 0.04em;
-    margin-bottom: 48px;
-  }
-
-  .pricing-grid {
+  .classes-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
@@ -494,117 +648,502 @@
     border: 1px solid var(--border);
   }
 
-  .plan { background: var(--dark); padding: 40px 32px; position: relative; }
-  .plan-featured { background: var(--card); }
-
-  .plan-badge {
-    display: inline-block;
-    background: var(--yellow);
-    color: var(--black);
-    font-size: 0.6875rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 4px 10px;
-    border-radius: 2px;
-    margin-bottom: 20px;
-    display: block;
-  }
-
-  .plan h3 {
-    font-family: var(--display);
-    font-size: 1.75rem;
-    letter-spacing: 0.06em;
-    margin-bottom: 12px;
-  }
-
-  .plan-price {
-    font-size: 1rem;
-    color: var(--muted);
-    margin-bottom: 16px;
+  .class-card {
+    background: var(--dark);
+    padding: 36px 32px 32px;
     display: flex;
-    align-items: baseline;
-    gap: 4px;
+    flex-direction: column;
+    transition: background 0.2s;
+  }
+  .class-card:hover { background: var(--card); }
+
+  .class-icon {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--yellow);
   }
 
-  .price-num {
+  .class-card h3 {
     font-family: var(--display);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
     color: var(--white);
-    letter-spacing: 0.04em;
   }
 
-  .price-note { font-size: 0.8125rem; }
-
-  .plan-desc { font-size: 0.9375rem; color: var(--muted); font-weight: 300; margin-bottom: 28px; line-height: 1.6; }
-
-  .plan-features { list-style: none; margin-bottom: 36px; }
-
-  .plan-features li {
+  .class-card p {
     font-size: 0.9375rem;
     color: var(--muted);
-    padding: 8px 0;
+    font-weight: 300;
+    line-height: 1.7;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .class-freq {
+    font-size: 0.8125rem;
+    color: var(--yellow);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: auto;
+    font-weight: 500;
+  }
+
+  /* ── Reviews ── */
+  .reviews {
+    padding: 100px 32px;
+    background: var(--card);
     border-bottom: 1px solid var(--border);
+  }
+
+  .reviews-header {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 52px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .reviews-header h2 {
+    font-family: var(--display);
+    font-size: clamp(2.5rem, 5vw, 4.25rem);
+    letter-spacing: 0.04em;
+    color: var(--white);
+  }
+
+  .rating-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+  }
+
+  .rating-stars {
+    font-size: 1.125rem;
+    color: var(--yellow);
+    letter-spacing: 0.08em;
+  }
+
+  .rating-score {
+    font-size: 0.875rem;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .review-card {
+    background: var(--dark);
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: background 0.2s;
+  }
+  .review-card:hover { background: var(--surface); }
+
+  .review-stars {
+    color: var(--yellow);
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+  }
+
+  .review-card blockquote {
+    font-size: 0.9375rem;
+    color: var(--soft);
+    line-height: 1.75;
+    font-weight: 300;
+    font-style: italic;
+    flex: 1;
+  }
+
+  .reviewer {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  .reviewer-name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  .reviewer-location {
+    font-size: 0.8125rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* ── About ── */
+  .about {
+    padding: 100px 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 96px;
+    align-items: start;
+  }
+
+  .about-text h2 {
+    font-family: var(--display);
+    font-size: clamp(2.5rem, 5vw, 4.25rem);
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+    color: var(--white);
+    line-height: 0.95;
+  }
+
+  .about-text p {
+    color: var(--muted);
+    font-weight: 300;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    margin-bottom: 18px;
+  }
+
+  .about-pillars {
+    border-top: 1px solid var(--border);
+  }
+
+  .pillar {
+    display: flex;
+    gap: 24px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+
+  .pillar-num {
+    font-family: var(--display);
+    font-size: 1rem;
+    color: var(--yellow);
+    letter-spacing: 0.08em;
+    flex-shrink: 0;
+    padding-top: 2px;
+    opacity: 0.7;
+  }
+
+  .pillar-body strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .pillar-body p {
+    font-size: 0.9375rem;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.65;
+  }
+
+  /* ── Contact ── */
+  .contact {
+    padding: 100px 32px;
+    background: var(--dark);
+    border-top: 1px solid var(--border);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 88px;
+    align-items: start;
+  }
+
+  .contact-info h2 {
+    font-family: var(--display);
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .contact-info > p {
+    color: var(--muted);
+    font-weight: 300;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    margin-bottom: 36px;
+  }
+
+  .contact-details {
+    list-style: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .contact-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9375rem;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  .detail-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+    opacity: 0.6;
+  }
+
+  .contact-details a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .contact-details a:hover { text-decoration: underline; }
+
+  /* ── Form ── */
+  .contact-form {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
     gap: 8px;
   }
 
-  .plan-features li::before { content: '&#10003;'; color: var(--yellow); font-size: 0.875rem; }
+  .form-group label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--soft);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    background: var(--dark);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 12px 16px;
+    font-family: var(--body);
+    font-size: 0.9375rem;
+    color: var(--white);
+    transition: border-color 0.2s;
+    resize: vertical;
+    outline: none;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--yellow);
+    box-shadow: 0 0 0 3px rgba(245, 210, 10, 0.08);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--muted);
+  }
+
+  .btn-submit {
+    align-self: flex-start;
+    background: var(--yellow);
+    color: var(--black);
+    border: none;
+    padding: 15px 36px;
+    border-radius: 2px;
+    font-family: var(--body);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-submit:hover {
+    background: var(--yellow-dim);
+    transform: translateY(-1px);
+  }
 
   /* ── Footer ── */
-  footer { background: var(--dark); padding: 48px 24px; }
+  footer {
+    background: var(--dark);
+    border-top: 1px solid var(--border);
+    padding: 56px 32px 32px;
+  }
 
   .footer-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 28px;
   }
 
   .footer-logo {
     font-family: var(--display);
-    font-size: 2rem;
-    letter-spacing: 0.1em;
+    font-size: 2.25rem;
+    letter-spacing: 0.12em;
     color: var(--yellow);
     display: block;
     margin-bottom: 12px;
   }
 
-  footer p { font-size: 0.875rem; color: var(--muted); margin-bottom: 4px; }
-
-  .footer-links { display: flex; flex-direction: column; gap: 12px; text-align: right; }
-
-  .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
-  .footer-links a:hover { color: var(--white); }
-
-  .footer-copy {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-    font-size: 0.8125rem;
-    color: #555;
+  .footer-brand p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.8;
   }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-contact a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+  }
+  .footer-contact a:hover { color: var(--yellow); }
+
+  .footer-hours strong {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--soft);
+    margin-bottom: 10px;
+  }
+
+  .footer-hours p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .footer-social span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    cursor: default;
+    border: 1px solid var(--border);
+  }
+
+  .footer-social span svg {
+    width: 14px;
+    height: 14px;
+    fill: var(--muted);
+  }
+
+  .footer-bottom {
+    font-size: 0.8125rem;
+    color: #3a3a3a;
+  }
+
+  .footer-bottom a {
+    color: var(--yellow);
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+  .footer-bottom a:hover { opacity: 1; }
 
   /* ── Responsive ── */
-  @media (max-width: 900px) {
-    .stats { grid-template-columns: repeat(2, 1fr); }
-    .stat:nth-child(2) { border-right: none; }
-    .stat:nth-child(3) { border-right: 1px solid var(--border); }
-    .pricing-grid { grid-template-columns: 1fr; }
-    .class-item { grid-template-columns: 1fr; gap: 8px; }
-    .class-spots { display: none; }
+  @media (max-width: 960px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-image { min-height: 300px; }
+    .classes-grid { grid-template-columns: repeat(2, 1fr); }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: 1 / -1; }
   }
 
-  @media (max-width: 640px) {
-    .hero h1 { font-size: 5rem; }
-    .hero-actions { flex-direction: column; }
-    .features, .classes, .pricing { padding: 64px 24px; }
-    .footer-inner { flex-direction: column; }
-    .footer-links { text-align: left; }
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .classes, .reviews, .about, .contact { padding: 72px 16px; }
+    .container { padding: 0 16px; }
+    .hero { padding: 40px 16px 36px; }
+    .trust-inner { flex-wrap: wrap; }
+    .trust-item { padding: 20px 32px; }
+    .reviews-header { flex-direction: column; align-items: flex-start; }
+    .rating-badge { align-items: flex-start; }
+  }
+
+  @media (max-width: 600px) {
+    .hero-image { display: none; }
+    .classes-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+    .trust-divider { display: none; }
+    .trust-inner { display: grid; grid-template-columns: 1fr 1fr; }
+    .footer-inner { grid-template-columns: 1fr; }
+    .hero h1 { font-size: clamp(2.75rem, 15vw, 4.5rem); }
+  }
+
+  /* ── WhatsApp Floating Button ── */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+    font-family: var(--body);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+  }
+  @media (max-width: 480px) {
+    .whatsapp-btn { padding: 13px; border-radius: 50%; }
+    .whatsapp-label { display: none; }
   }
 </style>

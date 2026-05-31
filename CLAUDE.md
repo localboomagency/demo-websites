@@ -33,14 +33,14 @@ All local business sites should be optimised for conversion. Use this section or
 
 | # | Section | Purpose |
 |---|---|---|
-| 1 | **Nav** | Logo/business name, phone number (click-to-call), optional "Get a Quote" button |
-| 2 | **Hero** | H1 + subheading + dual CTA (call button + scroll-to-form) |
+| 1 | **Nav** | Logo/business name, 3–5 page-anchor menu links, phone number (click-to-call) |
+| 2 | **Hero** | H1 + subheading + 3–4 benefit bullets + Google review widget + dual CTA — all above the fold |
 | 3 | **Trust bar** | Fast-scan social proof: years trading, jobs done, review score, key accreditation |
 | 4 | **Services** | What they offer — 3–6 cards with icon, name, short description |
 | 5 | **Reviews** | Star rating, review count, 3 testimonial cards with name and location |
 | 6 | **Why us / About** | Short differentiator copy — what makes them trustworthy and the best choice |
 | 7 | **Contact / Quote form** | Simple form: Name, Phone, Email, Message — with a strong CTA heading |
-| 8 | **Footer** | Address, phone, email, trading hours, copyright |
+| 8 | **Footer** | Address, phone, email, trading hours, 2–5 social icons (no links), copyright |
 
 ### 4. H1 format — service + location
 For local business sites the H1 must capture the service and location so it reads like a search intent:
@@ -51,20 +51,72 @@ For local business sites the H1 must capture the service and location so it read
 
 The subheading under the H1 can be warmer and more persuasive.
 
-### 5. Dual CTA — phone + form
+### 5. Hero — above the fold
+The entire hero must be visible without scrolling on both desktop (1280×800) and mobile (375×667). This means:
+- Keep H1 font sizes confident but not oversized — `clamp(2rem, 5vw, 3.25rem)` is a safe ceiling for most sites
+- Include 3–4 short benefit bullets (one line each, tick or icon prefix)
+- Include the Google review widget (see rule 8)
+- Both CTA buttons must be visible — no scrolling required
+
+Reduce hero top/bottom padding if needed to fit everything. The goal is a complete, convincing first impression at a glance.
+
+### 6. Dual CTA — phone + form
 Every local business hero must have two CTAs:
 - **Primary:** `Call us: 01234 567890` — a real `tel:` link, styled as the main button
 - **Secondary:** `Get a Free Quote` — smooth-scrolls to the contact form
 
 If no phone number is provided, use `01234 567890` as placeholder and note it clearly in a comment.
 
-### 6. Reviews section
+### 7. Nav menu links
+The nav must include 3–5 menu links that scroll to sections on the page (e.g. `href="#services"`, `href="#reviews"`, `href="#contact"`). These should reflect the actual sections on the page. They are page-anchor links — not links to separate pages. Style them as normal nav items.
+
+### 8. Google review widget in the hero
+Place a compact review widget inside the hero, above or below the benefit bullets but before the CTAs. It must include:
+- The Google "G" logo (inline SVG, use the real Google brand colours: blue #4285F4, red #EA4335, yellow #FBBC05, green #34A853)
+- Star rating rendered as filled gold stars (★)
+- Review count and score (e.g. "4.9 · 214 reviews on Google")
+
+If no real data is provided, invent a plausible score (4.7–4.9) and review count (80–400). Mark with `<!-- PLACEHOLDER: replace with real Google review data -->`.
+
+### 9. Reviews section
 **Always include a reviews/testimonials section.** If the client has not provided real reviews, use realistic placeholder data (believable UK names, specific and credible quote text, real-sounding locations). Mark placeholders with an HTML comment `<!-- PLACEHOLDER: replace with real reviews -->`.
 
-### 7. No schema markup / structured data
+### 10. Social icons in the footer
+Include 2–5 social media icons in the footer. Use inline SVG for the icons (Facebook, Instagram, X/Twitter, LinkedIn, TikTok — pick what suits the business type). Do **not** add `href` attributes — leave them as decorative placeholder icons. Style them subtly, consistent with the footer palette.
+
+### 11. No schema markup / structured data
 Do not add JSON-LD or any structured data. These are demo sites — keep the code clean and focused on the visual design.
 
 ---
+
+### 12. Container width consistency
+Keep a single, consistent content container width across the page layout. The header, main content and footer must share the same centered container class (for example `.container`) with the same `max-width`, horizontal padding and alignment. Use full-bleed sections only when intentionally designed (e.g. background bands), but ensure inner content in those sections still aligns to the shared container.
+
+Recommended CSS pattern:
+
+```
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+header .container, main .container, footer .container { /* same container, reused */ }
+```
+
+This keeps visual rhythm and ensures the logo, hero content, service cards, and footer information line up vertically across breakpoints.
+
+### 13. No "back" links on demos
+Do not add any "Back", "Back to demo", "Back to site" or similar links on individual demo pages. Demo pages are single-file homepages intended to stand alone; navigation within the page should use anchor links (e.g. `#services`, `#contact`) and the global index (`/`) will list all demos. Do not include links that encourage returning to the index — the index itself handles demo discovery.
+
+### 14. Floating WhatsApp button
+Every demo site must include a floating WhatsApp button fixed to the bottom-right of the viewport. It must:
+- Stay in position on scroll (`position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 9999`)
+- Use the official WhatsApp green (`#25D366`) as the background
+- Contain the WhatsApp logo as an inline SVG (white icon on green circle)
+- Link to `https://wa.me/[phone]` — use the business phone number with country code and no spaces/symbols (e.g. `https://wa.me/441234567890`). If no real number is provided, use `https://wa.me/441234567890` as a placeholder and mark with `<!-- PLACEHOLDER: replace with real WhatsApp number -->`
+- Include a short visible label "WhatsApp" on desktop, hidden on mobile (use `display: none` below 480px)
+- Have a `border-radius: 50px` pill shape (or `50%` if icon-only on mobile), a subtle `box-shadow`, and a smooth `:hover` lift effect (`transform: translateY(-2px)`)
+- Be placed just before the closing `</body>` tag so it overlays all content
+
+### 15. No emojis — SVG icons only
+Never use emoji characters anywhere in demo sites. For decorative icons (service cards, class cards, contact detail rows, etc.), use inline SVG only. If a suitable SVG icon does not exist for the concept, omit the icon entirely rather than substituting an emoji.
+
 
 ## Quality bar — visual design
 
@@ -78,6 +130,7 @@ Standards to hit:
 - Hero sections that feel big and confident
 - Mobile responsive — test mentally at 375px and 1280px
 - No generic stock photo vibes in the copy or layout — write as if there's a real brand behind it
+- **No em dashes** — never use em dashes (—) in any generated copy. Use a comma, colon, or rewrite the sentence instead.
 
 ### Design inspiration
 The user maintains a folder of reference websites outside this project. When building a new demo, ask if they have any relevant examples to share. Reference them for layout, typographic mood, and colour direction — do not copy, use as inspiration.

@@ -6,123 +6,307 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Artisan Bakery — Handcrafted Since 1987</title>
+    <title>The Artisan Bakery — Thornbury</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
 
+    <!-- 1. NAV -->
     <nav>
-      <div class="nav-inner">
-        <a href="/" class="back-link">&#8592; Back to demos</a>
+      <div class="container nav-inner">
         <span class="logo">The Artisan Bakery</span>
+        <div class="nav-links">
+          <a href="#menu">Our Menu</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#story">About</a>
+          <a href="#enquiries">Contact</a>
+        </div>
+        <a href="tel:01454567890" class="nav-phone">
+          <!-- PLACEHOLDER: phone number -->
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          01454 567890
+        </a>
       </div>
     </nav>
 
+    <!-- 2. HERO -->
     <section class="hero">
-      <div class="hero-inner">
-        <p class="eyebrow">Handcrafted Since 1987</p>
-        <h1>Bread baked<br />with love and<br />tradition.</h1>
-        <p class="hero-sub">Using stone-milled flour, wild yeast starters, and recipes passed down through generations. Every loaf tells a story.</p>
-        <div class="hero-actions">
-          <a href="#menu" class="btn-primary">View Our Menu</a>
-          <a href="#story" class="btn-ghost">Our Story</a>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Handcrafted Since 1987</p>
+          <h1>Artisan Bakery<br />in Thornbury</h1>
+          <p class="hero-sub">Stone-milled flour, wild-yeast starters, and 37 years of craft. Every loaf baked by hand before the town wakes up.</p>
+          <ul class="hero-bullets">
+            <li>Stone-milled flour from a Shropshire family mill</li>
+            <li>48-hour cold ferments &mdash; no shortcuts, ever</li>
+            <li>Baked fresh every morning from 3am</li>
+          </ul>
+          <!-- PLACEHOLDER: replace with real Google review data -->
+          <div class="google-review">
+            <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#4285F4" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.9 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 2.9l5.7-5.7C34.5 6.5 29.5 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#EA4335" d="M6.3 14.7l6.6 4.8C14.6 16.1 19 13 24 13c3.1 0 5.8 1.1 8 2.9l5.7-5.7C34.5 6.5 29.5 4 24 4 16.3 4 9.7 8.4 6.3 14.7z"/><path fill="#FBBC05" d="M24 44c5.2 0 9.9-1.9 13.4-5.1l-6.2-5.2C29.3 35.3 26.8 36 24 36c-5.2 0-9.7-3.1-11.3-7.9l-6.5 5.1C9.6 39.5 16.3 44 24 44z"/><path fill="#34A853" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.3 5.6l6.2 5.2C37 39 44 33 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg>
+            <span class="review-stars-hero">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="review-text-hero">4.9 &nbsp;&middot;&nbsp; 214 reviews on Google</span>
+          </div>
+          <div class="hero-actions">
+            <a href="tel:01454567890" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Call: 01454 567890
+            </a>
+            <a href="#enquiries" class="btn-ghost">Pre-order &amp; Enquiries</a>
+          </div>
+        </div>
+        <!-- PLACEHOLDER: replace gallery-cell divs with <img> tags at /images/bakery/product-[1-4].jpg -->
+        <div class="hero-gallery">
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
         </div>
       </div>
     </section>
 
-    <div class="banner">
-      <p>Open Tuesday – Sunday &nbsp;·&nbsp; 7am to 5pm &nbsp;·&nbsp; 14 Millstone Lane, Thornbury</p>
+    <!-- 3. TRUST BAR -->
+    <div class="trust-bar">
+      <div class="container trust-inner">
+        <div class="trust-item">
+          <span class="trust-num">37</span>
+          <span class="trust-label">Years trading</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num">12+</span>
+          <span class="trust-label">Breads baked daily</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num">4.9&#9733;</span>
+          <span class="trust-label">214 Google reviews</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num">3am</span>
+          <span class="trust-label">When we start</span>
+        </div>
+      </div>
     </div>
 
-    <section class="story" id="story">
-      <div class="container">
-        <div class="story-grid">
-          <div class="story-text">
-            <span class="label">Our Story</span>
-            <h2>A family tradition, still baked by hand</h2>
-            <p>It started in a small kitchen in 1987, with my grandmother's sourdough starter — a culture she'd kept alive for decades. Today we use those same techniques: long cold ferments, hand-scoring, and stone-deck ovens that create the crust you simply can't replicate at home.</p>
-            <p>Every morning, our bakers arrive at 3am. By the time you walk in, the shelves are warm.</p>
-          </div>
-          <div class="story-visual">
-            <div class="visual-block">
-              <span class="visual-stat">37</span>
-              <span class="visual-label">Years of baking</span>
-            </div>
-            <div class="visual-block">
-              <span class="visual-stat">12</span>
-              <span class="visual-label">Breads baked daily</span>
-            </div>
-            <div class="visual-block">
-              <span class="visual-stat">3am</span>
-              <span class="visual-label">When we start</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="menu" id="menu">
+    <!-- 4. SERVICES -->
+    <section class="services" id="menu">
       <div class="container">
         <span class="label">Baked Fresh Daily</span>
-        <h2>Signature Items</h2>
-        <div class="menu-grid">
-          <div class="menu-card">
-            <span class="menu-icon">&#127838;</span>
+        <h2>What we make</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="20" x2="12" y2="4"/><path d="M12 8c0-2-2-4-4-4 0 2 2 4 4 4z"/><path d="M12 8c0-2 2-4 4-4 0 2-2 4-4 4z"/><path d="M12 13c0-2-2-4-4-4 0 2 2 4 4 4z"/><path d="M12 13c0-2 2-4 4-4 0 2-2 4-4 4z"/></svg></span>
             <h3>Country Sourdough</h3>
-            <p>Our original. 48-hour cold ferment, open crumb, blistered crust. A classic that never changes.</p>
-            <span class="price">&pound;6.50</span>
+            <p>Our original. 48-hour cold ferment, open crumb, blistered crust. Made with the same starter since 1987.</p>
+            <span class="price">from &pound;6.50</span>
           </div>
-          <div class="menu-card">
-            <span class="menu-icon">&#129360;</span>
-            <h3>Butter Croissant</h3>
-            <p>Laminated with French beurre de qualit&eacute;. Honey-gold, shattering layers, soft inside.</p>
-            <span class="price">&pound;3.20</span>
+          <div class="service-card">
+            <span class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+            <h3>Butter Croissants</h3>
+            <p>Laminated with French beurre de qualit&eacute;. Honey-gold layers, shattering crust, cloud-soft inside.</p>
+            <span class="price">from &pound;3.20</span>
           </div>
-          <div class="menu-card">
-            <span class="menu-icon">&#129395;</span>
+          <div class="service-card">
+            <span class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 8C8 10 5.9 16.17 3.82 19.49c-.51.84.18 1.84 1.17 1.6C15.6 18.67 20.25 12.33 17 8z"/><path d="M3.82 19.49L8 15"/></svg></span>
             <h3>Seeded Rye</h3>
-            <p>Dense, earthy, and rich. Topped with sunflower, pumpkin, and sesame. Perfect with smoked salmon.</p>
-            <span class="price">&pound;5.80</span>
+            <p>Dense, earthy, and deeply flavoured. Topped with sunflower, pumpkin, and sesame. Extraordinary with smoked salmon.</p>
+            <span class="price">from &pound;5.80</span>
           </div>
-          <div class="menu-card">
-            <span class="menu-icon">&#127856;</span>
+          <div class="service-card">
+            <span class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span>
             <h3>Lemon Tart</h3>
-            <p>Buttery blind-baked shell, sharp curd made with unwaxed lemons, dusted with icing sugar.</p>
+            <p>Buttery blind-baked shell, sharp curd made with unwaxed lemons, finished with a veil of icing sugar.</p>
             <span class="price">&pound;4.50</span>
           </div>
-          <div class="menu-card">
-            <span class="menu-icon">&#129400;</span>
+          <div class="service-card">
+            <span class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="7" width="18" height="10" rx="2"/><circle cx="8" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="10" cy="9.5" r="1" fill="currentColor" stroke="none"/><circle cx="14" cy="9.5" r="1" fill="currentColor" stroke="none"/><circle cx="10" cy="14.5" r="1" fill="currentColor" stroke="none"/><circle cx="14" cy="14.5" r="1" fill="currentColor" stroke="none"/></svg></span>
             <h3>Rosemary Focaccia</h3>
-            <p>Dimpled, oiled, and fragrant. Scattered with sea salt and fresh rosemary. Baked until golden.</p>
+            <p>Dimpled, oiled, fragrant. Scattered with Maldon sea salt and fresh rosemary. Baked until deeply golden.</p>
             <span class="price">&pound;4.00</span>
           </div>
-          <div class="menu-card">
-            <span class="menu-icon">&#9749;</span>
-            <h3>Morning Coffee</h3>
-            <p>Single-origin espresso from our neighbours at Roast &amp; Co. Perfect with a warm pastry.</p>
-            <span class="price">&pound;3.00</span>
+          <div class="service-card">
+            <span class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 6V4M12 6V3M15 6V4"/><rect x="5" y="6" width="14" height="5" rx="1"/><rect x="3" y="11" width="18" height="7" rx="1"/></svg></span>
+            <h3>Celebration Cakes</h3>
+            <p>Bespoke cakes made to order. Give us 48 hours and your brief &mdash; we&rsquo;ll bake something you won&rsquo;t forget.</p>
+            <span class="price">from &pound;45</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta">
+    <!-- 5. REVIEWS -->
+    <section class="reviews">
       <div class="container">
-        <h2>Find us on Millstone Lane</h2>
-        <p>We&rsquo;re open six days a week. Come early &mdash; we often sell out by midday.</p>
-        <a href="#" class="btn-primary">Get Directions</a>
+        <div class="reviews-header">
+          <div>
+            <span class="label">What people say</span>
+            <h2>214 five-star reviews</h2>
+          </div>
+          <div class="rating-badge">
+            <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-score">4.9 on Google</span>
+          </div>
+        </div>
+        <!-- PLACEHOLDER: replace with real reviews -->
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>&ldquo;The sourdough is absolutely incredible. I drive past three other bakeries to get here every Saturday. The crust shatters, the crumb is perfect &mdash; nothing in the county comes close.&rdquo;</blockquote>
+            <div class="reviewer">
+              <span class="reviewer-name">Sarah M.</span>
+              <span class="reviewer-location">Thornbury</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>&ldquo;We&rsquo;ve ordered croissants for our office every Friday for six months. Never a single disappointment. The lamination is genuinely exceptional &mdash; better than anything I&rsquo;ve had in Paris.&rdquo;</blockquote>
+            <div class="reviewer">
+              <span class="reviewer-name">James R.</span>
+              <span class="reviewer-location">Bristol</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>&ldquo;The lemon tart is the best thing I&rsquo;ve eaten in years. Proper pastry, proper curd, the right amount of sharp. I came in for bread and left spending &pound;30. Worth every penny.&rdquo;</blockquote>
+            <div class="reviewer">
+              <span class="reviewer-name">Helen T.</span>
+              <span class="reviewer-location">Chepstow</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- 6. WHY US / ABOUT -->
+    <section class="about" id="story">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="label">Our Story</span>
+            <h2>A family tradition, still baked by hand</h2>
+            <p>It started in a small kitchen in 1987, with my grandmother&rsquo;s sourdough starter &mdash; a culture she&rsquo;d kept alive for decades. Today we use those same techniques: long cold ferments, hand-scoring, and stone-deck ovens that create the crust you simply can&rsquo;t replicate at home.</p>
+            <p>Every morning our bakers arrive at 3am. By the time you walk in, the shelves are warm and the town smells like bread.</p>
+          </div>
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-num">01</span>
+              <div class="fact-body">
+                <strong>Stone-milled flour</strong>
+                <p>Sourced from a family mill in Shropshire. Better flavour, full traceability from field to loaf.</p>
+              </div>
+            </div>
+            <div class="fact">
+              <span class="fact-num">02</span>
+              <div class="fact-body">
+                <strong>48-hour ferments</strong>
+                <p>Cold-retarding overnight develops flavour compounds that fast baking never achieves.</p>
+              </div>
+            </div>
+            <div class="fact">
+              <span class="fact-num">03</span>
+              <div class="fact-body">
+                <strong>Local suppliers only</strong>
+                <p>Our butter, eggs, and dairy all come from within 30 miles. We know the farms.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT / QUOTE FORM -->
+    <section class="contact" id="enquiries">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="label">Get in Touch</span>
+            <h2>Pre-orders, wholesale &amp; catering</h2>
+            <p>Planning a wedding or event? Need bread for your caf&eacute; or deli? Want to pre-order for the weekend? Drop us a message and we&rsquo;ll get back to you same day.</p>
+            <ul class="contact-details">
+              <li>
+                <span class="detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <span>14 Millstone Lane, Thornbury, BS35 2AA</span>
+              </li>
+              <li>
+                <span class="detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <a href="tel:01454567890">01454 567890</a>
+                <!-- PLACEHOLDER: phone number -->
+              </li>
+              <li>
+                <span class="detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                <a href="mailto:hello@artisanbakery.co.uk">hello@artisanbakery.co.uk</a>
+              </li>
+              <li>
+                <span class="detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <span>Tuesday &ndash; Sunday &nbsp;&middot;&nbsp; 7am &ndash; 5pm</span>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="07700 900000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">What do you need?</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your order, event, or enquiry&hellip;"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FOOTER -->
     <footer>
       <div class="container">
-        <p class="footer-logo">The Artisan Bakery</p>
-        <p>14 Millstone Lane, Thornbury &nbsp;&middot;&nbsp; hello@artisanbakery.co.uk</p>
-        <p class="footer-note">&copy; 2024 The Artisan Bakery &nbsp;&middot;&nbsp; <a href="/">Back to demos</a></p>
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <span class="footer-logo">The Artisan Bakery</span>
+            <p>14 Millstone Lane<br />Thornbury, BS35 2AA</p>
+            <div class="footer-social">
+              <span aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></span>
+              <span aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
+              <span aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></span>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <p><a href="tel:01454567890">01454 567890</a></p>
+            <!-- PLACEHOLDER: phone number -->
+            <p><a href="mailto:hello@artisanbakery.co.uk">hello@artisanbakery.co.uk</a></p>
+          </div>
+          <div class="footer-hours">
+            <strong>Opening Hours</strong>
+            <p>Tuesday &ndash; Sunday</p>
+            <p>7:00am &ndash; 5:00pm</p>
+            <p>Closed Mondays</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 The Artisan Bakery</p>
+        </div>
       </div>
     </footer>
+
+    <!-- PLACEHOLDER: replace with real WhatsApp number -->
+    <a href="https://wa.me/441454567890" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.563 4.14 1.54 5.877L.057 23.882a.5.5 0 0 0 .611.611l6.054-1.489A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.875 9.875 0 0 1-5.034-1.378l-.36-.214-3.733.918.951-3.683-.234-.376A9.865 9.865 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/></svg>
+      <span class="whatsapp-label">WhatsApp</span>
+    </a>
 
   </body>
 </html>
@@ -131,15 +315,19 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --cream: #fdf8f2;
+    --cream: #fdf8f0;
     --warm-white: #fffdf9;
-    --terracotta: #c67c52;
-    --terracotta-dark: #a8623f;
-    --brown: #3d2c1e;
-    --mid: #6b5344;
-    --border: #e8ddd4;
+    --parchment: #f5ede0;
+    --terracotta: #c0673f;
+    --terracotta-dark: #a3522e;
+    --terracotta-light: #e8b49a;
+    --brown: #2e1f11;
+    --mid: #6b5040;
+    --light: #9b7e6a;
+    --border: #e8ddd0;
+    --border-light: #f0e8dc;
     --serif: 'Playfair Display', Georgia, serif;
-    --sans: 'Lato', sans-serif;
+    --sans: 'Lato', system-ui, sans-serif;
   }
 
   body {
@@ -153,271 +341,779 @@
   nav {
     position: sticky;
     top: 0;
-    background: rgba(253, 248, 242, 0.95);
-    backdrop-filter: blur(8px);
+    background: rgba(255, 253, 249, 0.96);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     z-index: 100;
   }
 
   .nav-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 16px 24px;
-    display: flex;
-    justify-content: space-between;
+    height: 64px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
   }
 
-  .back-link {
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links a {
     font-size: 0.875rem;
     color: var(--mid);
     text-decoration: none;
+    transition: color 0.2s;
   }
-  .back-link:hover { color: var(--brown); }
+  .nav-links a:hover { color: var(--terracotta); }
 
   .logo {
     font-family: var(--serif);
     font-size: 1.125rem;
     font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--brown);
+    white-space: nowrap;
   }
+
+  .nav-phone {
+    justify-self: end;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #fff;
+    background: var(--terracotta);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: 0.45rem 0.875rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .nav-phone:hover { background: var(--terracotta-dark); }
 
   /* ── Hero ── */
   .hero {
     background: var(--cream);
-    padding: 100px 24px 80px;
+    padding: 52px 32px 44px;
     border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
   }
 
-  .hero-inner { max-width: 680px; margin: 0 auto; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(192, 103, 63, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
 
   .eyebrow {
-    font-size: 0.8125rem;
-    letter-spacing: 0.12em;
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--terracotta);
-    margin-bottom: 20px;
-    display: block;
-    font-weight: 400;
+    margin-bottom: 24px;
+    font-weight: 700;
   }
 
   .hero h1 {
     font-family: var(--serif);
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    line-height: 1.15;
-    margin-bottom: 24px;
+    font-size: clamp(2.25rem, 5vw, 3.375rem);
+    line-height: 1.1;
+    margin-bottom: 16px;
     font-weight: 700;
+    color: var(--brown);
   }
 
   .hero-sub {
-    font-size: 1.0625rem;
+    font-size: 1rem;
     color: var(--mid);
-    max-width: 520px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
     font-weight: 300;
+    line-height: 1.7;
   }
 
-  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-bullets {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .hero-bullets li {
+    font-size: 0.9375rem;
+    color: var(--mid);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-bullets li::before {
+    content: '✓';
+    color: var(--terracotta);
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 0.875rem;
+  }
+
+  .google-review {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 14px;
+    margin-bottom: 20px;
+  }
+
+  .review-stars-hero {
+    color: #f4b400;
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+  }
+
+  .review-text-hero {
+    font-size: 0.8125rem;
+    color: var(--mid);
+  }
+
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+
+  .hero-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .gallery-cell {
+    aspect-ratio: 1;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .gallery-cell:nth-child(odd) { background: var(--parchment); }
+  .gallery-cell:nth-child(even) { background: var(--cream); }
 
   .btn-primary {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: var(--terracotta);
     color: #fff;
-    padding: 14px 32px;
+    padding: 15px 32px;
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.9375rem;
-    transition: background 0.2s;
+    font-weight: 700;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.01em;
   }
-  .btn-primary:hover { background: var(--terracotta-dark); }
+  .btn-primary:hover {
+    background: var(--terracotta-dark);
+    transform: translateY(-1px);
+  }
 
   .btn-ghost {
     display: inline-block;
     color: var(--brown);
-    padding: 14px 24px;
+    padding: 15px 24px;
     text-decoration: none;
     font-size: 0.9375rem;
-    border-bottom: 1px solid var(--border);
-    transition: border-color 0.2s;
-  }
-  .btn-ghost:hover { border-color: var(--brown); }
-
-  /* ── Banner ── */
-  .banner {
-    background: var(--brown);
-    color: var(--cream);
-    text-align: center;
-    padding: 14px 24px;
-    font-size: 0.875rem;
-    letter-spacing: 0.04em;
-    font-weight: 300;
-  }
-
-  /* ── Shared ── */
-  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-
-  .label {
-    display: block;
-    font-size: 0.75rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--terracotta);
-    margin-bottom: 12px;
     font-weight: 400;
+    border-bottom: 2px solid var(--terracotta-light);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-ghost:hover {
+    border-color: var(--terracotta);
+    color: var(--terracotta);
   }
 
-  /* ── Story ── */
-  .story { padding: 96px 24px; }
+  /* ── Trust Bar ── */
+  .trust-bar {
+    background: var(--brown);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
 
-  .story-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+  .trust-inner {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 0;
   }
 
-  .story-text h2 {
-    font-family: var(--serif);
-    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-    line-height: 1.25;
-    margin-bottom: 24px;
-    font-weight: 600;
-  }
-
-  .story-text p { color: var(--mid); font-weight: 300; margin-bottom: 16px; }
-
-  .story-visual { display: flex; flex-direction: column; gap: 2px; }
-
-  .visual-block {
-    background: var(--cream);
-    border: 1px solid var(--border);
-    padding: 28px 32px;
+  .trust-item {
+    padding: 28px 48px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
   }
 
-  .visual-stat {
+  .trust-num {
     font-family: var(--serif);
-    font-size: 3rem;
+    font-size: 1.75rem;
     font-weight: 700;
-    color: var(--terracotta);
+    color: #fff;
     line-height: 1;
   }
 
-  .visual-label {
-    font-size: 0.875rem;
-    color: var(--mid);
-    margin-top: 6px;
-    font-weight: 300;
-    letter-spacing: 0.04em;
+  .trust-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--terracotta-light);
+    font-weight: 400;
   }
 
-  /* ── Menu ── */
-  .menu {
-    padding: 96px 24px;
-    background: var(--cream);
-    border-top: 1px solid var(--border);
+  .trust-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255,255,255,0.12);
+    flex-shrink: 0;
   }
 
-  .menu h2 {
-    font-family: var(--serif);
-    font-size: clamp(1.75rem, 3vw, 2.25rem);
-    margin-bottom: 48px;
-    font-weight: 600;
+  /* ── Shared ── */
+  .container { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+
+  .label {
+    display: block;
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 14px;
+    font-weight: 700;
   }
 
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2px;
-  }
-
-  .menu-card {
+  /* ── Services ── */
+  .services {
+    padding: 100px 32px;
     background: var(--warm-white);
-    padding: 32px 28px;
+  }
+
+  .services h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.875rem, 3.5vw, 2.625rem);
+    margin-bottom: 52px;
+    font-weight: 600;
+    color: var(--brown);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--border);
     border: 1px solid var(--border);
   }
 
-  .menu-icon { font-size: 1.75rem; display: block; margin-bottom: 16px; }
+  .service-card {
+    background: var(--warm-white);
+    padding: 36px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.2s;
+  }
+  .service-card:hover { background: var(--cream); }
 
-  .menu-card h3 {
-    font-family: var(--serif);
-    font-size: 1.1875rem;
-    margin-bottom: 10px;
-    font-weight: 600;
+  .service-icon {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--terracotta);
   }
 
-  .menu-card p {
+  .service-card h3 {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--brown);
+  }
+
+  .service-card p {
     font-size: 0.9375rem;
     color: var(--mid);
     font-weight: 300;
-    line-height: 1.65;
+    line-height: 1.7;
+    flex: 1;
     margin-bottom: 20px;
   }
 
   .price {
-    font-size: 1.0625rem;
+    font-family: var(--serif);
+    font-size: 1rem;
     color: var(--terracotta);
-    font-family: var(--serif);
-  }
-
-  /* ── CTA ── */
-  .cta {
-    padding: 96px 24px;
-    text-align: center;
-    background: var(--brown);
-    color: var(--cream);
-  }
-
-  .cta h2 {
-    font-family: var(--serif);
-    font-size: clamp(1.75rem, 3vw, 2.25rem);
-    margin-bottom: 16px;
     font-weight: 600;
+    margin-top: auto;
   }
 
-  .cta p {
-    color: #c4b2a6;
+  /* ── Reviews ── */
+  .reviews {
+    padding: 100px 32px;
+    background: var(--parchment);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 52px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .reviews-header h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.875rem, 3.5vw, 2.625rem);
+    font-weight: 600;
+    color: var(--brown);
+  }
+
+  .rating-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+
+  .rating-stars {
+    font-size: 1.25rem;
+    color: #d4900a;
+    letter-spacing: 0.05em;
+  }
+
+  .rating-score {
+    font-size: 0.875rem;
+    color: var(--mid);
     font-weight: 300;
-    margin-bottom: 36px;
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .review-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: box-shadow 0.2s;
+  }
+  .review-card:hover {
+    box-shadow: 0 4px 24px rgba(46, 31, 17, 0.07);
+  }
+
+  .review-stars {
+    color: #d4900a;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+  }
+
+  .review-card blockquote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--brown);
+    line-height: 1.75;
+    flex: 1;
+  }
+
+  .reviewer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-light);
+  }
+
+  .reviewer-name {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--brown);
+  }
+
+  .reviewer-location {
+    font-size: 0.8125rem;
+    color: var(--light);
+  }
+
+  /* ── About ── */
+  .about {
+    padding: 100px 32px;
+    background: var(--warm-white);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 88px;
+    align-items: start;
+  }
+
+  .about-text h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.75rem, 3vw, 2.375rem);
+    line-height: 1.25;
+    margin-bottom: 28px;
+    font-weight: 600;
+    color: var(--brown);
+  }
+
+  .about-text p {
+    color: var(--mid);
+    font-weight: 300;
+    margin-bottom: 18px;
     font-size: 1.0625rem;
+    line-height: 1.75;
+  }
+
+  .about-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .fact {
+    display: flex;
+    gap: 24px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+
+  .fact-num {
+    font-family: var(--serif);
+    font-size: 0.875rem;
+    color: var(--terracotta);
+    font-weight: 600;
+    flex-shrink: 0;
+    padding-top: 2px;
+    letter-spacing: 0.05em;
+  }
+
+  .fact-body strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--brown);
+    margin-bottom: 6px;
+  }
+
+  .fact-body p {
+    font-size: 0.9375rem;
+    color: var(--mid);
+    font-weight: 300;
+    line-height: 1.65;
+  }
+
+  /* ── Contact ── */
+  .contact {
+    padding: 100px 32px;
+    background: var(--cream);
+    border-top: 1px solid var(--border);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 88px;
+    align-items: start;
+  }
+
+  .contact-info h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.75rem, 3vw, 2.375rem);
+    line-height: 1.25;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--brown);
+  }
+
+  .contact-info > p {
+    color: var(--mid);
+    font-weight: 300;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    margin-bottom: 36px;
+  }
+
+  .contact-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .contact-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9375rem;
+    color: var(--mid);
+  }
+
+  .detail-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+    opacity: 0.7;
+  }
+
+  .contact-details a {
+    color: var(--terracotta);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .contact-details a:hover { text-decoration: underline; }
+
+  /* ── Form ── */
+  .contact-form {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-group label {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--brown);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 12px 16px;
+    font-family: var(--sans);
+    font-size: 0.9375rem;
+    color: var(--brown);
+    background: #fff;
+    transition: border-color 0.2s;
+    resize: vertical;
+    outline: none;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--terracotta);
+    box-shadow: 0 0 0 3px rgba(192, 103, 63, 0.1);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--light);
+  }
+
+  .btn-submit {
+    align-self: flex-start;
+    background: var(--terracotta);
+    color: #fff;
+    border: none;
+    padding: 15px 36px;
+    border-radius: 4px;
+    font-family: var(--sans);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.01em;
+  }
+  .btn-submit:hover {
+    background: var(--terracotta-dark);
+    transform: translateY(-1px);
   }
 
   /* ── Footer ── */
   footer {
-    background: #2a1c12;
-    color: #a0876e;
-    padding: 40px 24px;
-    text-align: center;
-    font-size: 0.875rem;
-    font-weight: 300;
+    background: var(--brown);
+    color: rgba(255,255,255,0.5);
+    padding: 56px 32px 32px;
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 28px;
   }
 
   .footer-logo {
-    font-family: var(--serif);
-    font-size: 1.25rem;
-    color: var(--cream);
-    margin-bottom: 12px;
-    font-weight: 600;
     display: block;
+    font-family: var(--serif);
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 14px;
   }
 
-  footer p { margin-bottom: 8px; }
-  .footer-note { margin-top: 20px; font-size: 0.8125rem; }
-  footer a { color: var(--terracotta); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
+  .footer-brand p,
+  .footer-hours p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.45);
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .footer-social span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    cursor: default;
+  }
+
+  .footer-social span svg {
+    width: 14px;
+    height: 14px;
+    fill: rgba(255,255,255,0.35);
+  }
+
+  .footer-contact p {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+  }
+
+  .footer-hours strong {
+    display: block;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  footer a {
+    color: var(--terracotta-light);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  footer a:hover { color: #fff; }
+
+  .footer-bottom {
+    font-size: 0.8125rem;
+    color: rgba(255,255,255,0.3);
+  }
 
   /* ── Responsive ── */
-  @media (max-width: 768px) {
-    .hero { padding: 72px 24px 60px; }
-    .story-grid { grid-template-columns: 1fr; gap: 48px; }
-    .story-visual { flex-direction: row; }
-    .visual-block { padding: 20px; }
-    .visual-stat { font-size: 2rem; }
-    .story, .menu, .cta { padding: 64px 24px; }
+  @media (max-width: 960px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-gallery { grid-template-columns: repeat(4, 1fr); grid-template-rows: 1fr; }
+    .gallery-cell { aspect-ratio: auto; height: 180px; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: 1 / -1; }
+    .trust-inner { flex-wrap: wrap; }
+    .trust-item { padding: 20px 32px; }
   }
 
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero { padding: 40px 24px 36px; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .reviews-header { flex-direction: column; align-items: flex-start; }
+    .rating-badge { align-items: flex-start; }
+    .services, .reviews, .about, .contact { padding: 72px 16px; }
+    .container { padding: 0 16px; }
+  }
+
+  @media (max-width: 600px) {
+    .hero-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+    .gallery-cell { aspect-ratio: 1; height: auto; }
+    .services-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+    .trust-divider { display: none; }
+    .trust-inner { display: grid; grid-template-columns: 1fr 1fr; }
+    .footer-inner { grid-template-columns: 1fr; }
+  }
+
+  /* ── WhatsApp Floating Button ── */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+    font-family: var(--sans);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+  }
   @media (max-width: 480px) {
-    .story-visual { flex-direction: column; }
-    .hero-actions { flex-direction: column; }
+    .whatsapp-btn { padding: 13px; border-radius: 50%; }
+    .whatsapp-label { display: none; }
   }
 </style>
