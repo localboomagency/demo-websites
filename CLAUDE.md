@@ -70,6 +70,16 @@ If no phone number is provided, use `01234 567890` as placeholder and note it cl
 ### 7. Nav menu links
 The nav must include 3–5 menu links that scroll to sections on the page (e.g. `href="#services"`, `href="#reviews"`, `href="#contact"`). These should reflect the actual sections on the page. They are page-anchor links — not links to separate pages. Style them as normal nav items.
 
+### 7a. Mobile nav — hamburger icon
+On mobile (≤768px) the nav links hide and a hamburger icon button must appear on the right. The mobile header order left to right is: **logo | phone button | hamburger icon**.
+
+Implementation pattern:
+- Add `<button class="nav-hamburger" aria-label="Open menu">` with a 3-line SVG icon as the last child of `.nav-inner` (after the phone button)
+- Default: `display: none`
+- At 768px: show the hamburger (`display: flex`), switch `.nav-inner` to `display: flex; justify-content: space-between; align-items: center`, and reset `justify-self: auto` on `.nav-phone`
+- The hamburger is a **visual placeholder only** — it does not need to open a dropdown in demo sites
+- Style it to match the site's theme: no background, a border matching the nav's border colour, and `cursor: pointer`
+
 ### 8. Google review widget in the hero
 Place a compact review widget inside the hero, above or below the benefit bullets but before the CTAs. It must include:
 - The Google "G" logo (inline SVG, use the real Google brand colours: blue #4285F4, red #EA4335, yellow #FBBC05, green #34A853)
