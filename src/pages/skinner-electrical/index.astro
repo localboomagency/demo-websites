@@ -802,6 +802,23 @@
       .whatsapp-btn { padding: 0.75rem; border-radius: 50%; }
       .whatsapp-btn span { display: none; }
     }
+
+    /* ─── VAN BANNER ─── */
+    .van-banner {
+      display: none;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .van-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .van-banner { display: block; }
+    }
   </style>
 </head>
 
@@ -830,6 +847,11 @@
       </button>
     </div>
   </nav>
+
+  <!-- VAN BANNER — mobile only, sits flush under nav -->
+  <div class="van-banner">
+    <img src="/images/skinner-electrical/signwritten-van.png" alt="Skinner Electrical signwritten van" loading="eager" />
+  </div>
 
   <!-- 2. HERO -->
   <section class="hero">
