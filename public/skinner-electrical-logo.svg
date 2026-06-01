@@ -1,0 +1,23 @@
+<svg width="1000" height="520" viewBox="0 0 1000 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Skinner Electrical logo</title>
+  <desc id="desc">A bold Skinner Electrical logo matching the black work shirt design, with a yellow angular lightning bolt, white italic Skinner lettering, and smaller yellow Electrical lettering.</desc>
+
+  <defs>
+    <style>
+      .brand-main { font-family: Impact, Haettenschweiler, "Arial Black", Arial, Helvetica, sans-serif; }
+      .brand-sub { font-family: Georgia, "Times New Roman", serif; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="520" fill="#111111"/>
+
+  <g transform="translate(386 54)">
+    <path d="M115 0H188L121 92H48L115 0Z" fill="#F5C400"/>
+    <path d="M172 80H250L78 250L141 125H78L123 80H172Z" fill="#F5C400"/>
+  </g>
+
+  <g transform="translate(90 358)">
+    <text class="brand-main" x="0" y="0" fill="#F4F4F4" font-size="118" font-style="italic" letter-spacing="8">SKINNER</text>
+    <text class="brand-sub" x="250" y="58" fill="#F5C400" font-size="38" font-weight="700" letter-spacing="15">ELECTRICAL</text>
+  </g>
+</svg>

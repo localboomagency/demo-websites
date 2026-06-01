@@ -19,4 +19,9 @@ export const sites = [
     path: '/painting',
     screenshot: '/screenshots/painting.png',
   },
+  {
+    name: 'Skinner Electrical',
+    path: '/skinner-electrical',
+    screenshot: '/screenshots/skinner-electrical.svg',
+  },
 ];
