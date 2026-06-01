@@ -1,0 +1,30 @@
+<svg width="900" height="280" viewBox="0 0 900 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">LJ Painting &amp; Decorating logo</title>
+  <desc id="desc">A clean black and orange logo for LJ Painting and Decorating, featuring an outline house, paint brush detail, and mixed sans and italic serif lettering.</desc>
+
+  <defs>
+    <style>
+      .brand-sans { font-family: Inter, Arial, Helvetica, sans-serif; }
+      .brand-serif { font-family: Georgia, "Times New Roman", serif; }
+    </style>
+  </defs>
+
+  <g transform="translate(70 55)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42 92V53L86 17L130 53V92" stroke="#E06520" stroke-width="10"/>
+    <path d="M63 92V64H109V92" stroke="#E06520" stroke-width="10"/>
+    <path d="M42 92H130" stroke="#E06520" stroke-width="10"/>
+    <path d="M57 122C86 105 118 101 153 109" stroke="#1A1918" stroke-width="12"/>
+    <path d="M58 123C87 111 116 109 147 116" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M147 116L169 123" stroke="#1A1918" stroke-width="12"/>
+    <path d="M169 123L181 88" stroke="#1A1918" stroke-width="12"/>
+    <path d="M175 91L195 98" stroke="#E06520" stroke-width="12"/>
+    <path d="M197 99L203 81" stroke="#E06520" stroke-width="10"/>
+  </g>
+
+  <g transform="translate(302 72)">
+    <text class="brand-sans" x="0" y="67" fill="#1A1918" font-size="66" font-weight="800" letter-spacing="-0.4">LJ Painting</text>
+    <text class="brand-serif" x="2" y="132" fill="#1A1918" font-size="58" font-weight="700" font-style="italic">&amp; Decorating</text>
+    <path d="M6 157H443" stroke="#E06520" stroke-width="7" stroke-linecap="round"/>
+    <path d="M6 174H216" stroke="#1A1918" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

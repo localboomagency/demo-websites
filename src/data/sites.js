@@ -14,4 +14,9 @@ export const sites = [
     path: '/garden',
     screenshot: '/screenshots/garden.svg',
   },
+  {
+    name: 'LJ Painting & Decorating',
+    path: '/painting',
+    screenshot: '/screenshots/painting.png',
+  },
 ];
