@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#FAF5EE"/>
+  <!-- Nav bar -->
+  <rect width="800" height="56" fill="#FAF5EE" stroke="#E8D9C8" stroke-width="1"/>
+  <!-- Logo paw -->
+  <g fill="#C0563A" transform="translate(32,16)">
+    <ellipse cx="12" cy="16" rx="5" ry="4"/>
+    <ellipse cx="6" cy="10.5" rx="2.2" ry="2.8" transform="rotate(-18 6 10.5)"/>
+    <ellipse cx="10" cy="8" rx="2.2" ry="2.8" transform="rotate(-5 10 8)"/>
+    <ellipse cx="14" cy="8" rx="2.2" ry="2.8" transform="rotate(5 14 8)"/>
+    <ellipse cx="18" cy="10.5" rx="2.2" ry="2.8" transform="rotate(18 18 10.5)"/>
+  </g>
+  <text x="60" y="32" font-family="sans-serif" font-weight="900" font-size="16" fill="#2C1A0E">Paw Kind</text>
+  <!-- Nav links -->
+  <text x="200" y="32" font-family="sans-serif" font-size="11" fill="#6B4C3B">Services</text>
+  <text x="270" y="32" font-family="sans-serif" font-size="11" fill="#6B4C3B">Reviews</text>
+  <text x="340" y="32" font-family="sans-serif" font-size="11" fill="#6B4C3B">About</text>
+  <text x="400" y="32" font-family="sans-serif" font-size="11" fill="#6B4C3B">Contact</text>
+  <rect x="650" y="14" width="120" height="28" rx="6" fill="#C0563A"/>
+  <text x="710" y="32" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">01626 834 120</text>
+
+  <!-- Hero -->
+  <rect y="56" width="800" height="220" fill="url(#heroGrad)"/>
+  <defs>
+    <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF5EE"/>
+      <stop offset="100%" stop-color="#EDD9C4"/>
+    </linearGradient>
+  </defs>
+  <!-- Decorative paw prints -->
+  <g fill="#C89A2E" opacity="0.12" transform="translate(640,60) rotate(22) scale(1.6)">
+    <ellipse cx="12" cy="16" rx="5" ry="4"/><ellipse cx="6" cy="10.5" rx="2.2" ry="2.8" transform="rotate(-18 6 10.5)"/><ellipse cx="10" cy="8" rx="2.2" ry="2.8"/><ellipse cx="14" cy="8" rx="2.2" ry="2.8"/><ellipse cx="18" cy="10.5" rx="2.2" ry="2.8" transform="rotate(18 18 10.5)"/>
+  </g>
+  <g fill="#C89A2E" opacity="0.1" transform="translate(50,220) rotate(-28) scale(2)">
+    <ellipse cx="12" cy="16" rx="5" ry="4"/><ellipse cx="6" cy="10.5" rx="2.2" ry="2.8" transform="rotate(-18 6 10.5)"/><ellipse cx="10" cy="8" rx="2.2" ry="2.8"/><ellipse cx="14" cy="8" rx="2.2" ry="2.8"/><ellipse cx="18" cy="10.5" rx="2.2" ry="2.8" transform="rotate(18 18 10.5)"/>
+  </g>
+  <!-- Badge -->
+  <rect x="310" y="72" width="180" height="20" rx="10" fill="rgba(192,86,58,0.1)" stroke="#C0563A" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="400" y="86" font-family="sans-serif" font-size="9" font-weight="700" fill="#C0563A" text-anchor="middle" letter-spacing="1">PAW PRINT · BOVEY TRACEY</text>
+  <!-- Review widget -->
+  <rect x="280" y="98" width="240" height="24" rx="6" fill="#fff" stroke="#E8D9C8" stroke-width="1"/>
+  <text x="380" y="115" font-family="sans-serif" font-size="10" fill="#6B4C3B" text-anchor="middle">★★★★★  4.9 · 127 reviews on Google</text>
+  <!-- H1 -->
+  <text x="400" y="148" font-family="sans-serif" font-weight="900" font-size="28" fill="#2C1A0E" text-anchor="middle">Dog Walking &amp; Daycare</text>
+  <text x="400" y="180" font-family="sans-serif" font-weight="900" font-size="28" fill="#2C1A0E" text-anchor="middle">in <tspan fill="#C0563A">Bovey Tracey</tspan></text>
+  <!-- Subheading -->
+  <text x="400" y="208" font-family="sans-serif" font-size="12" fill="#6B4C3B" text-anchor="middle">Trusted, tail-wagging care across Bovey Tracey and the Dartmoor fringe.</text>
+  <!-- CTAs -->
+  <rect x="240" y="228" width="140" height="32" rx="7" fill="#C0563A"/>
+  <text x="310" y="249" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">01626 834 120</text>
+  <rect x="392" y="228" width="140" height="32" rx="7" fill="#fff" stroke="#C0563A" stroke-width="2"/>
+  <text x="462" y="249" font-family="sans-serif" font-size="11" font-weight="700" fill="#C0563A" text-anchor="middle">Get a Free Quote</text>
+
+  <!-- Trust bar -->
+  <rect y="276" width="800" height="56" fill="#2C1A0E"/>
+  <text x="100" y="296" font-family="sans-serif" font-weight="900" font-size="14" fill="#C89A2E" text-anchor="middle">Est. 2018</text>
+  <text x="100" y="314" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.5)" text-anchor="middle">SERVING BOVEY TRACEY</text>
+  <text x="300" y="296" font-family="sans-serif" font-weight="900" font-size="14" fill="#C89A2E" text-anchor="middle">800+</text>
+  <text x="300" y="314" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.5)" text-anchor="middle">DOGS WALKED</text>
+  <text x="500" y="296" font-family="sans-serif" font-weight="900" font-size="14" fill="#C89A2E" text-anchor="middle">4.9★</text>
+  <text x="500" y="314" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.5)" text-anchor="middle">GOOGLE RATING</text>
+  <text x="700" y="296" font-family="sans-serif" font-weight="900" font-size="14" fill="#C89A2E" text-anchor="middle">Narps UK</text>
+  <text x="700" y="314" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.5)" text-anchor="middle">REGISTERED MEMBER</text>
+
+  <!-- Services section preview -->
+  <rect y="332" width="800" height="168" fill="#FAF5EE"/>
+  <text x="400" y="360" font-family="sans-serif" font-weight="900" font-size="16" fill="#2C1A0E" text-anchor="middle">Tailored Care for Every Dog</text>
+  <!-- Service cards -->
+  <rect x="24" y="374" width="235" height="110" rx="10" fill="#fff" stroke="#E8D9C8" stroke-width="1"/>
+  <rect x="32" y="382" width="28" height="28" rx="7" fill="rgba(200,154,46,0.15)"/>
+  <text x="46" y="401" font-family="sans-serif" font-size="9" fill="#C89A2E" text-anchor="middle">...</text>
+  <text x="120" y="428" font-family="sans-serif" font-weight="800" font-size="11" fill="#2C1A0E" text-anchor="middle">Group Dog Walks</text>
+  <text x="120" y="444" font-family="sans-serif" font-size="9" fill="#6B4C3B" text-anchor="middle">Up to four dogs per group</text>
+
+  <rect x="283" y="374" width="234" height="110" rx="10" fill="#fff" stroke="#E8D9C8" stroke-width="1"/>
+  <text x="400" y="428" font-family="sans-serif" font-weight="800" font-size="11" fill="#2C1A0E" text-anchor="middle">Doggy Daycare</text>
+  <text x="400" y="444" font-family="sans-serif" font-size="9" fill="#6B4C3B" text-anchor="middle">Full days of play and rest</text>
+
+  <rect x="541" y="374" width="235" height="110" rx="10" fill="#fff" stroke="#E8D9C8" stroke-width="1"/>
+  <text x="658" y="428" font-family="sans-serif" font-weight="800" font-size="11" fill="#2C1A0E" text-anchor="middle">Home Boarding</text>
+  <text x="658" y="444" font-family="sans-serif" font-size="9" fill="#6B4C3B" text-anchor="middle">Overnight family-style care</text>
+</svg>

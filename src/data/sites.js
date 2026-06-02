@@ -64,6 +64,20 @@ export const sites = [
     },
   },
   {
+    name: 'Paw Kind Dog Walking',
+    path: '/paw-kind',
+    screenshot: '/screenshots/paw-kind.svg',
+    logo: {
+      type: 'text',
+      text: 'Paw Kind',
+      bg: '#FAF5EE',
+      color: '#2C1A0E',
+      font: "'Nunito', system-ui, sans-serif",
+      weight: '900',
+      size: '1.2rem',
+    },
+  },
+  {
     name: 'Teign Plumbing & Heating',
     path: '/teign-plumbing',
     screenshot: '/screenshots/teign-plumbing.svg',
