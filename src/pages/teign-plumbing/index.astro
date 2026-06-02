@@ -821,9 +821,16 @@
       .nav-links { display: none; }
       .nav-socials { display: none; }
       .nav-quote { display: none; }
-      .nav-hamburger { display: flex; }
-      .nav-inner { justify-content: space-between; gap: 1rem; }
-      .nav-logo img { width: 190px; }
+      .nav-hamburger { display: flex; grid-column: 3; justify-self: end; }
+      .nav-inner {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 0;
+      }
+      .nav-logo { grid-column: 2; justify-self: center; }
+      .nav-phone { grid-column: 1; justify-self: start; }
+      .nav-logo img { width: 285px; }
 
       .form-row { grid-template-columns: 1fr; }
 
@@ -844,15 +851,14 @@
     }
 
     @media (max-width: 580px) {
-      .nav-logo img { width: 168px; }
+      .nav-logo img { width: 252px; }
       .services-grid { grid-template-columns: 1fr; }
       .reviews-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
     }
 
     @media (max-width: 480px) {
-      .nav-inner { gap: 0.6rem; }
-      .nav-logo img { width: 152px; }
+      .nav-logo img { width: 228px; }
       .nav-phone {
         padding: 0.52rem 0.75rem;
         font-size: 0;
