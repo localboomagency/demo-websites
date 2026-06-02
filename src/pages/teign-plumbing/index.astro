@@ -826,11 +826,20 @@
         display: grid;
         grid-template-columns: 1fr auto 1fr;
         align-items: center;
+        height: auto;
+        min-height: 64px;
+        padding: 0.5rem 0;
         gap: 0;
       }
       .nav-logo { grid-column: 2; justify-self: center; }
-      .nav-phone { grid-column: 1; justify-self: start; }
-      .nav-logo img { width: 285px; }
+      .nav-phone {
+        grid-column: 1;
+        justify-self: start;
+        padding: 0.52rem 0.75rem;
+        font-size: 0;
+        gap: 0;
+      }
+      .nav-logo img { width: 248px; }
 
       .form-row { grid-template-columns: 1fr; }
 
@@ -851,19 +860,14 @@
     }
 
     @media (max-width: 580px) {
-      .nav-logo img { width: 252px; }
+      .nav-logo img { width: 228px; }
       .services-grid { grid-template-columns: 1fr; }
       .reviews-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
     }
 
     @media (max-width: 480px) {
-      .nav-logo img { width: 228px; }
-      .nav-phone {
-        padding: 0.52rem 0.75rem;
-        font-size: 0;
-        gap: 0;
-      }
+      .nav-logo img { width: 200px; }
       .whatsapp-label { display: none; }
       .whatsapp-btn {
         padding: 0;
