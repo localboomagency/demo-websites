@@ -819,6 +819,8 @@
 
     @media (max-width: 768px) {
       .nav-links { display: none; }
+      .nav-socials { display: none; }
+      .nav-quote { display: none; }
       .nav-hamburger { display: flex; }
       .nav-inner { justify-content: space-between; gap: 1rem; }
       .nav-logo img { width: 190px; }
@@ -832,12 +834,13 @@
       }
       .hero-badge { margin-bottom: 0.7rem; }
       .hero h1 { margin-bottom: 0.6rem; font-size: clamp(1.65rem, 6vw, 2.25rem); }
-      .hero-sub { font-size: 0.88rem; line-height: 1.55; margin-bottom: 0.85rem; }
-      .hero-bullets { margin-bottom: 0.9rem; gap: 0.4rem 1rem; }
-      .review-widgets { margin-bottom: 1rem; }
+      .hero-sub { font-size: 0.88rem; line-height: 1.55; margin-bottom: 0.85rem; max-width: 100%; margin-left: 0; margin-right: 0; }
+      .hero-bullets { margin-bottom: 0.9rem; gap: 0.4rem 1rem; margin-left: 0; margin-right: 0; max-width: 100%; }
+      .review-widgets { margin-bottom: 1rem; justify-content: flex-start; }
       .review-widget { padding: 0.4rem 0.75rem; }
-      .hero-ctas { gap: 0.6rem; }
+      .hero-ctas { gap: 0.6rem; justify-content: flex-start; }
       .btn-primary, .btn-secondary { padding: 0.72rem 1.3rem; font-size: 0.88rem; }
+      .hero-content { text-align: left; margin: 0; }
     }
 
     @media (max-width: 580px) {
