@@ -1,0 +1,1204 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teign Plumbing &amp; Heating | Emergency Plumber in Teignmouth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #1C2B3A;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ─── TOP BANNER ─── */
+    .top-banner {
+      background: #F8A323;
+      color: #1C2B3A;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 0.45rem 1rem;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      background: #FFF8F0;
+      border-bottom: 1px solid #DDE8EF;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      height: 68px;
+    }
+
+    .nav-logo {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .nav-logo img {
+      display: block;
+      width: 210px;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      list-style: none;
+      flex: 1;
+    }
+
+    .nav-links a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #4B5563;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: #5BA3C9; }
+
+    .nav-phone {
+      background: #5BA3C9;
+      color: #fff;
+      padding: 0.85rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.93rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .nav-phone:hover { background: #4A8DB5; transform: translateY(-1px); }
+
+    .nav-socials {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .nav-social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      color: #5BA3C9;
+      border: 1px solid #5BA3C9;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+
+    .nav-social-icon:hover {
+      color: #fff;
+      background: #5BA3C9;
+      border-color: #5BA3C9;
+    }
+
+    .nav-quote {
+      background: transparent;
+      color: #5BA3C9;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      border: 2px solid #5BA3C9;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 0.2s, color 0.2s, transform 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .nav-quote:hover {
+      background: #5BA3C9;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: 1px solid #DDE8EF;
+      border-radius: 6px;
+      padding: 0.5rem 0.6rem;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: #1C2B3A;
+      border-radius: 2px;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      background: #0D1B2A;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      padding: 3rem 0 3.5rem;
+      min-height: 480px;
+    }
+
+    .hero-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .hero-bg-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(13,27,42,0.97) 0%,
+        rgba(13,27,42,0.88) 55%,
+        rgba(13,27,42,0.68) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(248,163,35,0.12);
+      color: #F8A323;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: 100px;
+      border: 1px solid rgba(248,163,35,0.3);
+      margin-bottom: 0.9rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4.5vw, 3.25rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.08;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.68);
+      line-height: 1.65;
+      margin-bottom: 1rem;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-bullets {
+      list-style: none;
+      margin-bottom: 1.1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 2.5rem;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .hero-bullets li {
+      font-size: 0.91rem;
+      color: rgba(255,255,255,0.88);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .bullet-check {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      background: rgba(91,163,201,0.16);
+      border: 1px solid rgba(91,163,201,0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #5BA3C9;
+    }
+
+    /* Review widgets — dark variant */
+    .review-widgets {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
+    }
+
+    .review-widget {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 8px;
+      padding: 0.48rem 0.9rem;
+    }
+
+    .review-stars {
+      color: #FBBC04;
+      font-size: 0.9rem;
+      letter-spacing: -1px;
+    }
+
+    .review-text {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.82);
+      font-weight: 500;
+    }
+
+    .hero-ctas {
+      display: flex;
+      justify-content: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: #5BA3C9;
+      color: #fff;
+      padding: 0.85rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.93rem;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .btn-primary:hover {
+      background: #4A8DB5;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      padding: 0.85rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.93rem;
+      border: 2px solid rgba(255,255,255,0.38);
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-1px);
+    }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar {
+      background: #FAF8F4;
+      border-top: 1px solid #EDE8E0;
+      border-bottom: 1px solid #EDE8E0;
+      padding: 2rem 0;
+    }
+
+    .trust-bar-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .trust-item {
+      padding: 0.75rem 1rem;
+    }
+
+    .trust-number {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: #1C2B3A;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .trust-label {
+      font-size: 0.75rem;
+      color: #6B7280;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ─── SERVICES ─── */
+    .services {
+      background: #fff;
+      padding: 5rem 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 800;
+      color: #1C2B3A;
+      margin-bottom: 0.55rem;
+    }
+
+    .section-header p {
+      color: #6B7280;
+      font-size: 0.95rem;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .service-card {
+      background: #FAF8F4;
+      border: 1px solid #EDE8E0;
+      border-radius: 10px;
+      padding: 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .service-card:hover {
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+      transform: translateY(-2px);
+    }
+
+    .service-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1C2B3A;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      font-size: 0.87rem;
+      color: #6B7280;
+      line-height: 1.65;
+    }
+
+    /* ─── REVIEWS ─── */
+    .reviews {
+      background: #FAF8F4;
+      padding: 5rem 0;
+    }
+
+    .reviews-meta {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .reviews-score {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #1C2B3A;
+      line-height: 1;
+    }
+
+    .reviews-stars {
+      color: #FBBC04;
+      font-size: 1.3rem;
+      margin: 0.3rem 0;
+    }
+
+    .reviews-count {
+      font-size: 0.88rem;
+      color: #6B7280;
+      margin-bottom: 1.2rem;
+    }
+
+    .reviews-meta h2 {
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 800;
+      color: #1C2B3A;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .review-card {
+      background: #fff;
+      border: 1px solid #EDE8E0;
+      border-radius: 10px;
+      padding: 1.6rem;
+    }
+
+    .review-card-stars {
+      color: #FBBC04;
+      font-size: 0.9rem;
+      margin-bottom: 0.85rem;
+      letter-spacing: -0.5px;
+    }
+
+    .review-quote {
+      font-size: 0.88rem;
+      color: #374151;
+      line-height: 1.65;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .review-author {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #1C2B3A;
+    }
+
+    .review-location {
+      font-size: 0.78rem;
+      color: #9CA3AF;
+      margin-top: 0.1rem;
+    }
+
+    /* ─── ABOUT ─── */
+    .about {
+      background: #fff;
+      padding: 5rem 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-content h2 {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 800;
+      color: #1C2B3A;
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-content p {
+      font-size: 0.93rem;
+      color: #4B5563;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .about-stat {
+      background: #EBF5FB;
+      border-radius: 10px;
+      padding: 1.3rem;
+    }
+
+    .about-stat-number {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #4A8DB5;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .about-stat-label {
+      font-size: 0.78rem;
+      color: #4B5563;
+      font-weight: 500;
+      line-height: 1.35;
+    }
+
+    /* ─── CONTACT ─── */
+    .contact {
+      background: #EBF5FB;
+      padding: 5rem 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 800;
+      color: #1C2B3A;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    .contact-info > p {
+      font-size: 0.93rem;
+      color: #4B5563;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+
+    .contact-detail {
+      margin-bottom: 1rem;
+    }
+
+    .contact-detail-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #9CA3AF;
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-detail-value {
+      font-size: 0.93rem;
+      color: #1C2B3A;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .contact-detail-value a { color: #1C2B3A; }
+    .contact-detail-value a:hover { color: #5BA3C9; text-decoration: underline; }
+
+    .contact-form {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #374151;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1.5px solid #DDE8EF;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.93rem;
+      color: #1C2B3A;
+      background: #fff;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus { border-color: #5BA3C9; }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .form-submit {
+      width: 100%;
+      background: #5BA3C9;
+      color: #fff;
+      border: none;
+      padding: 0.9rem;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.97rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .form-submit:hover { background: #4A8DB5; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #112031;
+      color: #94A3B8;
+      padding: 3.5rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand-name {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand-desc {
+      font-size: 0.83rem;
+      line-height: 1.65;
+      color: #64748B;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    .footer-social-item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.07);
+      color: #94A3B8;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .footer-col-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #fff;
+      margin-bottom: 1.1rem;
+    }
+
+    .footer-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .footer-list li {
+      font-size: 0.83rem;
+      color: #64748B;
+      line-height: 1.5;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: #475569;
+    }
+
+    /* ─── WHATSAPP ─── */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 9999;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37,211,102,0.45);
+    }
+
+    .whatsapp-label { display: inline; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 860px) {
+      .hero-bullets { grid-template-columns: 1fr; max-width: 340px; }
+      .hero-content { max-width: 100%; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .trust-bar-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-inner { justify-content: space-between; gap: 1rem; }
+      .nav-logo img { width: 190px; }
+
+      .form-row { grid-template-columns: 1fr; }
+
+      /* Tighten hero for above-the-fold fit */
+      .hero {
+        padding: 1.75rem 0 2rem;
+        min-height: 0;
+      }
+      .hero-badge { margin-bottom: 0.7rem; }
+      .hero h1 { margin-bottom: 0.6rem; font-size: clamp(1.65rem, 6vw, 2.25rem); }
+      .hero-sub { font-size: 0.88rem; line-height: 1.55; margin-bottom: 0.85rem; }
+      .hero-bullets { margin-bottom: 0.9rem; gap: 0.4rem 1rem; }
+      .review-widgets { margin-bottom: 1rem; }
+      .review-widget { padding: 0.4rem 0.75rem; }
+      .hero-ctas { gap: 0.6rem; }
+      .btn-primary, .btn-secondary { padding: 0.72rem 1.3rem; font-size: 0.88rem; }
+    }
+
+    @media (max-width: 580px) {
+      .nav-logo img { width: 168px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    @media (max-width: 480px) {
+      .nav-inner { gap: 0.6rem; }
+      .nav-logo img { width: 152px; }
+      .nav-phone {
+        padding: 0.52rem 0.75rem;
+        font-size: 0;
+        gap: 0;
+      }
+      .whatsapp-label { display: none; }
+      .whatsapp-btn {
+        padding: 0;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BANNER -->
+<div class="top-banner">Available 24/7 · 7 Days a Week</div>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Teign Plumbing and Heating home">
+        <img src="/teign-plumbing-logo.svg" alt="Teign Plumbing &amp; Heating" width="430" height="112" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <!-- Facebook -->
+        <span class="nav-social-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </span>
+        <!-- Instagram -->
+        <span class="nav-social-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </span>
+      </div>
+      <a href="#contact" class="nav-quote">Request a Quote</a>
+      <a href="tel:01626485230" class="nav-phone">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.4a16 16 0 006.72 6.72l1.76-1.76a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        01626 485 230
+      </a>
+      <button class="nav-hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-bg-img" src="/images/teign-plumbing/hero-van.png" alt="" aria-hidden="true" width="1536" height="1024" loading="eager" />
+  <div class="hero-bg-gradient"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="review-widgets">
+        <!-- PLACEHOLDER: replace with real Google review data -->
+        <div class="review-widget">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          <span class="review-stars">★★★★★</span>
+          <span class="review-text">4.8 · 186 reviews on Google</span>
+        </div>
+        <!-- PLACEHOLDER: replace with real Facebook review data -->
+        <div class="review-widget">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.269h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+          </svg>
+          <span class="review-stars">★★★★★</span>
+          <span class="review-text">5.0 · 16 reviews on Facebook</span>
+        </div>
+      </div>
+      <h1>24/7 Emergency Plumber<br>in Teignmouth</h1>
+      <p class="hero-sub">Fast, reliable plumbing and heating across Teignmouth and the Teign Valley. Gas Safe registered, no call-out charge, and typically on-site within the hour.</p>
+      <ul class="hero-bullets">
+        <li>
+          <span class="bullet-check" aria-hidden="true">
+            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Here when you need us
+        </li>
+        <li>
+          <span class="bullet-check" aria-hidden="true">
+            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Gas Safe registered engineers
+        </li>
+        <li>
+          <span class="bullet-check" aria-hidden="true">
+            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          No call-out charge, ever
+        </li>
+        <li>
+          <span class="bullet-check" aria-hidden="true">
+            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          All work fully guaranteed
+        </li>
+      </ul>
+      <div class="hero-ctas">
+        <a href="tel:01626485230" class="btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.4a16 16 0 006.72 6.72l1.76-1.76a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          01626 485 230
+        </a>
+        <a href="#contact" class="btn-secondary">Get a Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-grid">
+      <div class="trust-item">
+        <div class="trust-number">Est. 2008</div>
+        <div class="trust-label">Serving Devon</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">2,400+</div>
+        <div class="trust-label">Jobs Completed</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">4.8★</div>
+        <div class="trust-label">Google Rating</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">Gas Safe</div>
+        <div class="trust-label">Registered Engineers</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header">
+      <h2>Plumbing &amp; Heating Services</h2>
+      <p>From a burst pipe at 3am to a full bathroom installation, we cover every job across Teignmouth and the wider Teign Valley.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Emergency Call-Outs</h3>
+        <p>Burst pipes, severe leaks, complete boiler failures. We respond around the clock, 365 days a year, with no call-out charge.</p>
+      </div>
+      <div class="service-card">
+        <h3>Boiler Installation</h3>
+        <p>Supply and fit of energy-efficient condensing boilers from leading brands. Full commissioning and Gas Safe certificates provided.</p>
+      </div>
+      <div class="service-card">
+        <h3>Boiler Repair &amp; Servicing</h3>
+        <p>Annual services, fault diagnostics, and repairs to all makes and models. Parts sourced and fitted the same week in most cases.</p>
+      </div>
+      <div class="service-card">
+        <h3>Central Heating Systems</h3>
+        <p>Full system installs, powerflush, radiator upgrades, and smart thermostat fitting. We design heating that keeps your bills down.</p>
+      </div>
+      <div class="service-card">
+        <h3>Bathroom Fitting</h3>
+        <p>Full strip-out and refit including tiling, shower enclosures, and sanitaryware. Managed from start to finish by our team.</p>
+      </div>
+      <div class="service-card">
+        <h3>Leak Detection &amp; Repair</h3>
+        <p>Specialist trace-and-access leak finding without unnecessary damage. Pipes, joints, and valves repaired and pressure-tested.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-meta">
+      <div class="reviews-score">4.8</div>
+      <div class="reviews-stars">★★★★★</div>
+      <div class="reviews-count">Based on 186 Google reviews</div>
+      <h2>What Our Customers Say</h2>
+    </div>
+    <!-- PLACEHOLDER: replace with real reviews -->
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-card-stars">★★★★★</div>
+        <p class="review-quote">Called at 11pm with a burst pipe flooding the kitchen. The engineer arrived within 45 minutes, sorted it quickly, and left the place cleaner than he found it. Genuinely impressive service.</p>
+        <div class="review-author">Margaret Blackwell</div>
+        <div class="review-location">Teignmouth</div>
+      </div>
+      <div class="review-card">
+        <div class="review-card-stars">★★★★★</div>
+        <p class="review-quote">Had a new boiler fitted last autumn. The quote was fair, the work was done in a single day, and everything was clearly explained. Heating has been faultless all winter. Very pleased.</p>
+        <div class="review-author">David Hartley</div>
+        <div class="review-location">Shaldon</div>
+      </div>
+      <div class="review-card">
+        <div class="review-card-stars">★★★★★</div>
+        <p class="review-quote">Used Teign Plumbing for a full bathroom refit. The standard of work was excellent, the tiling in particular is perfect. They finished on time and were polite and professional throughout.</p>
+        <div class="review-author">Carolyn Firth</div>
+        <div class="review-location">Dawlish</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <h2>Teignmouth's Trusted Plumbing &amp; Heating Specialists</h2>
+        <p>Teign Plumbing &amp; Heating has been serving homes and businesses across Teignmouth, Shaldon, Dawlish, and the Teign Valley since 2008. Our Gas Safe registered engineers carry every job to the same high standard, whether it's a routine annual service or an overnight emergency.</p>
+        <p>We believe in honest pricing, clear communication, and turning up when we say we will. More than 80% of our new work comes through referrals from existing customers, which tells us we're doing something right.</p>
+        <p>All work is fully insured and guaranteed in writing. We carry current public liability insurance and our Gas Safe registration is renewed every year without exception.</p>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-number">17+</div>
+          <div class="about-stat-label">Years in Business</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-number">2,400+</div>
+          <div class="about-stat-label">Jobs Completed</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-number">80%</div>
+          <div class="about-stat-label">Work from Referrals</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-number">60 min</div>
+          <div class="about-stat-label">Avg. Emergency Response</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Get a Free, No-Obligation Quote</h2>
+        <p>Fill in the form and we'll get back to you within two hours during working hours. For emergencies, call directly any time, day or night.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-label">Phone</div>
+          <div class="contact-detail-value"><a href="tel:01626485230">01626 485 230</a></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-label">Email</div>
+          <div class="contact-detail-value"><a href="mailto:info@teignplumbing.co.uk">info@teignplumbing.co.uk</a></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-label">Address</div>
+          <div class="contact-detail-value">14 Brunswick Street<br>Teignmouth, TQ14 8AB</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-label">Hours</div>
+          <div class="contact-detail-value">Mon–Fri: 7am–8pm<br>Sat: 8am–6pm<br>24/7 Emergency Line</div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="Your phone number" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">How can we help?</label>
+            <textarea id="message" placeholder="Describe the job or issue..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Teign Plumbing &amp; Heating</div>
+        <p class="footer-brand-desc">Gas Safe registered plumbing and heating engineers serving Teignmouth, Shaldon, Dawlish, and the Teign Valley since 2008.</p>
+        <div class="footer-social">
+          <span class="footer-social-item" aria-label="Facebook">FB</span>
+          <span class="footer-social-item" aria-label="Instagram">IG</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-list">
+          <li>Emergency Call-Outs</li>
+          <li>Boiler Installation</li>
+          <li>Boiler Repair &amp; Servicing</li>
+          <li>Central Heating</li>
+          <li>Bathroom Fitting</li>
+          <li>Leak Detection</li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-list">
+          <li>01626 485 230</li>
+          <li>info@teignplumbing.co.uk</li>
+          <li>14 Brunswick Street<br>Teignmouth, TQ14 8AB</li>
+          <li>Mon–Fri: 7am–8pm</li>
+          <li>Sat: 8am–6pm</li>
+          <li>24/7 Emergency Line</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2025 Teign Plumbing &amp; Heating. All rights reserved.</span>
+      <span class="footer-copy">Gas Safe Registered</span>
+    </div>
+  </div>
+</footer>
+
+<!-- PLACEHOLDER: replace with real WhatsApp number -->
+<a href="https://wa.me/441626485230" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+  <span class="whatsapp-label">WhatsApp Us</span>
+</a>
+
+</body>
+</html>

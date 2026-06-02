@@ -1,0 +1,27 @@
+<svg width="400" height="112" viewBox="0 0 400 112" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="tplogo-title tplogo-desc">
+  <title id="tplogo-title">Teign Plumbing and Heating logo</title>
+  <desc id="tplogo-desc">Teign Plumbing and Heating logo with a water drop and flame icon.</desc>
+
+  <defs>
+    <linearGradient id="tpBlueGrad" x1="30" y1="25" x2="70" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DC3DD"/>
+      <stop offset="1" stop-color="#1685BE"/>
+    </linearGradient>
+    <linearGradient id="tpOrangeGrad" x1="66" y1="35" x2="88" y2="83" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59A42"/>
+      <stop offset="1" stop-color="#D85B2A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Water drop (blue) -->
+  <path d="M46 32C46 32 28.5 53.2 28.5 67.7C28.5 78.05 36.24 86 46 86C55.76 86 63.5 78.05 63.5 67.7C63.5 53.2 46 32 46 32Z" fill="url(#tpBlueGrad)"/>
+  <path d="M48.5 76.5C43.2 79 36.5 74.95 36.5 67.4C36.5 61.75 40.32 54.75 44.56 48.92" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.76"/>
+
+  <!-- Flame (orange) -->
+  <path d="M73.57 36C73.57 36 60.5 49.06 60.5 63.15C60.5 76 68.95 86 80 86C91.05 86 99.5 76 99.5 63.15C99.5 51.88 90.95 41.58 85.44 36.58C85.28 43.57 81.78 48.02 78.06 51.84C78.99 45.4 77.18 39.78 73.57 36Z" fill="url(#tpOrangeGrad)"/>
+  <path d="M82.38 76.72C76.12 79.52 68.8 74.48 68.8 65.85C68.8 59.75 72.82 53.38 77 48.15" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.78"/>
+
+  <!-- Wordmark -->
+  <text x="112" y="57" fill="#1C2B3A" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">Teign Plumbing</text>
+  <text x="114" y="83" fill="#2B94C4" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="800" letter-spacing="4.8">&amp; HEATING</text>
+</svg>
