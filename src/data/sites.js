@@ -3,6 +3,8 @@ export const sites = [
     name: 'The Artisan Bakery',
     path: '/bakery',
     screenshot: '/screenshots/bakery.svg',
+    industry: 'Bakery',
+    location: 'Plymouth',
     logo: {
       type: 'text',
       text: 'The Artisan Bakery',
@@ -17,6 +19,8 @@ export const sites = [
     name: 'Peak Performance Gym',
     path: '/gym',
     screenshot: '/screenshots/gym.svg',
+    industry: 'Gym',
+    location: 'Exeter',
     logo: {
       type: 'text',
       text: 'PEAK',
@@ -32,6 +36,8 @@ export const sites = [
     name: 'Greenleaf Garden Services',
     path: '/garden',
     screenshot: '/screenshots/garden.svg',
+    industry: 'Gardening',
+    location: 'Exeter',
     logo: {
       type: 'text',
       text: 'Greenleaf',
@@ -47,6 +53,8 @@ export const sites = [
     name: 'LJ Painting & Decorating',
     path: '/painting',
     screenshot: '/screenshots/painting.png',
+    industry: 'Painting & Decorating',
+    location: 'Torquay',
     logo: {
       type: 'image',
       src: '/lj-painting-decorating-logo.svg',
@@ -57,6 +65,8 @@ export const sites = [
     name: 'Skinner Electrical',
     path: '/skinner-electrical',
     screenshot: '/screenshots/skinner-electrical.svg',
+    industry: 'Electrician',
+    location: 'Exeter',
     logo: {
       type: 'image',
       src: '/skinner-electrical-logo.svg',
@@ -67,6 +77,8 @@ export const sites = [
     name: 'Paw Kind Dog Walking',
     path: '/paw-kind',
     screenshot: '/screenshots/paw-kind.svg',
+    industry: 'Dog Walking',
+    location: 'Barnstaple',
     logo: {
       type: 'text',
       text: 'Paw Kind',
@@ -78,9 +90,27 @@ export const sites = [
     },
   },
   {
+    name: 'Riviera Yoga',
+    path: '/riviera-yoga',
+    screenshot: '/screenshots/riviera-yoga.svg',
+    industry: 'Yoga & Massage',
+    location: 'Paignton',
+    logo: {
+      type: 'text',
+      text: 'Riviera Yoga',
+      bg: '#F5ECCE',
+      color: '#2A1A08',
+      font: "'Cormorant Garamond', Georgia, serif",
+      weight: '600',
+      size: '1.45rem',
+    },
+  },
+  {
     name: 'Teign Plumbing & Heating',
     path: '/teign-plumbing',
     screenshot: '/screenshots/teign-plumbing.svg',
+    industry: 'Plumbing & Heating',
+    location: 'Newton Abbot',
     logo: {
       type: 'text',
       text: 'Teign Plumbing',

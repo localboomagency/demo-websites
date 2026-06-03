@@ -40,6 +40,10 @@ import { sites } from '../data/sites.js';
               <span class="card-name">{site.name}</span>
               <span class="card-arrow">&#8594;</span>
             </div>
+            <div class="card-tags">
+              {site.industry && <span class="tag tag-industry">{site.industry}</span>}
+              {site.location && <span class="tag tag-location">{site.location}</span>}
+            </div>
           </a>
         ))}
       </div>
@@ -150,6 +154,30 @@ import { sites } from '../data/sites.js';
   .card-name {
     font-size: 0.9375rem;
     font-weight: 500;
+  }
+
+  .card-tags {
+    padding: 10px 20px 14px;
+    display: flex;
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 3px 9px;
+    border-radius: 99px;
+    line-height: 1.4;
+  }
+
+  .tag-industry {
+    background: #eff6ff;
+    color: #1d4ed8;
+  }
+
+  .tag-location {
+    background: #f0fdf4;
+    color: #15803d;
   }
 
   .card-arrow {
