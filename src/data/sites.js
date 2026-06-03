@@ -106,6 +106,22 @@ export const sites = [
     },
   },
   {
+    name: 'ProCleanSW',
+    path: '/proclean-sw',
+    screenshot: '/screenshots/proclean-sw.svg',
+    industry: 'Cleaning Services',
+    location: 'Dawlish',
+    logo: {
+      type: 'text',
+      text: 'ProCleanSW',
+      bg: '#F8FAFF',
+      color: '#1A4DC8',
+      font: "'Inter', system-ui, sans-serif",
+      weight: '800',
+      size: '1.2rem',
+    },
+  },
+  {
     name: 'Teign Plumbing & Heating',
     path: '/teign-plumbing',
     screenshot: '/screenshots/teign-plumbing.svg',

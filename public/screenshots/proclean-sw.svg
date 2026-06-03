@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#F8FAFF"/>
+  <rect width="800" height="68" fill="#fff"/>
+  <rect width="800" height="1" y="68" fill="#E2E8F0"/>
+  <!-- Logo icon -->
+  <rect x="40" y="18" width="32" height="32" rx="8" fill="#1A4DC8"/>
+  <text x="84" y="40" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#1A4DC8">ProClean<tspan fill="#D63080">SW</tspan></text>
+  <!-- Nav links -->
+  <text x="260" y="40" font-family="Inter, sans-serif" font-size="13" fill="#4B5563">Services</text>
+  <text x="340" y="40" font-family="Inter, sans-serif" font-size="13" fill="#4B5563">Reviews</text>
+  <text x="416" y="40" font-family="Inter, sans-serif" font-size="13" fill="#4B5563">About</text>
+  <text x="484" y="40" font-family="Inter, sans-serif" font-size="13" fill="#4B5563">Contact</text>
+  <!-- Phone button -->
+  <rect x="620" y="16" width="130" height="36" rx="6" fill="#D63080"/>
+  <text x="685" y="39" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">01626 123 456</text>
+  <!-- Hero radial glow -->
+  <radialGradient id="glow" cx="80%" cy="0%" r="60%">
+    <stop offset="0%" stop-color="#c5d7f8" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#F8FAFF" stop-opacity="0"/>
+  </radialGradient>
+  <rect x="0" y="68" width="800" height="260" fill="url(#glow)"/>
+  <!-- Badge -->
+  <rect x="265" y="90" width="270" height="24" rx="12" fill="#EEF3FD"/>
+  <text x="400" y="106" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1A4DC8" text-anchor="middle" letter-spacing="1">SERVING DAWLISH &amp; SURROUNDING AREAS</text>
+  <!-- H1 -->
+  <text x="400" y="148" font-family="Inter, sans-serif" font-size="38" font-weight="900" fill="#0D1B3D" text-anchor="middle">Professional</text>
+  <text x="400" y="192" font-family="Inter, sans-serif" font-size="38" font-weight="900" fill="#1A4DC8" text-anchor="middle">Cleaning Services</text>
+  <text x="400" y="232" font-family="Inter, sans-serif" font-size="38" font-weight="900" fill="#0D1B3D" text-anchor="middle">in Dawlish</text>
+  <!-- Review widget -->
+  <rect x="300" y="250" width="200" height="34" rx="8" fill="#fff" stroke="#D6E2FB" stroke-width="1.5"/>
+  <text x="400" y="273" font-family="Inter, sans-serif" font-size="12" fill="#374151" text-anchor="middle">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0 · 11 reviews</text>
+  <!-- CTAs -->
+  <rect x="220" y="300" width="180" height="44" rx="6" fill="#D63080"/>
+  <text x="310" y="327" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Call Us: 01626 123 456</text>
+  <rect x="414" y="300" width="160" height="44" rx="6" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="494" y="327" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#0D1B3D" text-anchor="middle">Get a Free Quote</text>
+  <!-- Trust bar -->
+  <rect x="0" y="328" width="800" height="60" fill="#0D1B3D"/>
+  <text x="130" y="363" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">Est. <tspan fill="#D63080">2019</tspan></text>
+  <text x="330" y="363" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">800<tspan fill="#D63080">+</tspan></text>
+  <text x="530" y="363" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">5.0<tspan fill="#D63080">&#9733;</tspan></text>
+  <text x="700" y="363" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">Fully Insured</text>
+  <!-- Services section -->
+  <rect x="0" y="388" width="800" height="112" fill="#F8FAFF"/>
+  <text x="400" y="418" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0D1B3D" text-anchor="middle">Cleaning Services Tailored to You</text>
+  <!-- Service cards -->
+  <rect x="30" y="432" width="230" height="58" rx="10" fill="#fff" stroke="#E2E8F0" stroke-width="1"/><rect x="30" y="432" width="230" height="3" rx="2" fill="#1A4DC8"/>
+  <text x="145" y="462" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0D1B3D" text-anchor="middle">Regular Domestic Cleaning</text>
+  <rect x="285" y="432" width="230" height="58" rx="10" fill="#fff" stroke="#E2E8F0" stroke-width="1"/><rect x="285" y="432" width="230" height="3" rx="2" fill="#1A4DC8"/>
+  <text x="400" y="462" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0D1B3D" text-anchor="middle">End of Tenancy Cleaning</text>
+  <rect x="540" y="432" width="230" height="58" rx="10" fill="#fff" stroke="#E2E8F0" stroke-width="1"/><rect x="540" y="432" width="230" height="3" rx="2" fill="#1A4DC8"/>
+  <text x="655" y="462" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0D1B3D" text-anchor="middle">Deep &amp; Spring Cleaning</text>
+</svg>
