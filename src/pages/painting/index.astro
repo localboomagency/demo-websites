@@ -29,6 +29,7 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           01392 456789
         </a>
+        <a href="#contact" class="nav-quote">Get a Free Quote</a>
         <button class="nav-hamburger" aria-label="Open menu">
           <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <line x1="0" y1="1" x2="20" y2="1"/>
@@ -524,7 +525,7 @@
 
   .nav-inner {
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
+    grid-template-columns: auto 1fr auto auto auto;
     align-items: center;
     gap: 2rem;
     padding-top: .625rem;
@@ -562,17 +563,34 @@
     display: flex;
     align-items: center;
     gap: .4rem;
-    font-size: .875rem;
+    font-size: .9375rem;
     font-weight: 700;
     color: #fff;
     background: var(--accent);
-    padding: .45rem 1rem;
-    border-radius: 6px;
-    border: 1px solid var(--accent);
+    padding: .85rem 1.75rem;
+    border-radius: 8px;
+    border: 2px solid var(--accent);
     white-space: nowrap;
     transition: background .2s, border-color .2s;
+    text-decoration: none;
   }
   .nav-phone:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+  .nav-quote {
+    display: flex;
+    align-items: center;
+    font-size: .9375rem;
+    font-weight: 600;
+    color: var(--near-black);
+    background: transparent;
+    padding: .85rem 1.75rem;
+    border-radius: 8px;
+    border: 2px solid var(--near-black);
+    white-space: nowrap;
+    transition: background .2s, color .2s, transform .15s;
+    text-decoration: none;
+  }
+  .nav-quote:hover { background: var(--near-black); color: white; transform: translateY(-1px); }
 
   .nav-hamburger {
     display: none;
@@ -1095,6 +1113,7 @@
       gap: .75rem;
     }
     .nav-links { display: none; }
+    .nav-quote { display: none; }
     .nav-phone { justify-self: auto; }
     .nav-hamburger { display: flex; }
 

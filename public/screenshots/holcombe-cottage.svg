@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060f1a"/>
+      <stop offset="50%" style="stop-color:#102a42"/>
+      <stop offset="100%" style="stop-color:#1c4a6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="rgba(4,12,24,0.35)"/>
+  <!-- Nav bar -->
+  <rect width="800" height="64" fill="rgba(0,0,0,0.15)"/>
+  <text x="40" y="35" font-family="Georgia, serif" font-size="18" letter-spacing="4" fill="white" font-weight="400">HOLCOMBE</text>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="10" letter-spacing="2" fill="rgba(255,255,255,0.5)" font-style="italic">Cottage, Dawlish</text>
+  <!-- Eyebrow -->
+  <text x="400" y="155" font-family="Arial, sans-serif" font-size="10" letter-spacing="5" fill="#d4b87a" text-anchor="middle" font-weight="400">DAWLISH, SOUTH DEVON</text>
+  <!-- H1 -->
+  <text x="400" y="215" font-family="Georgia, serif" font-size="56" fill="white" text-anchor="middle" font-weight="300" font-style="italic">Holcombe Cottage</text>
+  <!-- Subtitle -->
+  <text x="400" y="248" font-family="Georgia, serif" font-size="16" fill="rgba(255,255,255,0.6)" text-anchor="middle" letter-spacing="2">Luxury Seaside Accommodation in Dawlish</text>
+  <!-- TripAdvisor badge -->
+  <rect x="270" y="265" width="260" height="34" rx="2" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+  <circle cx="288" cy="282" r="11" fill="#34E0A1"/>
+  <text x="308" y="287" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">5.0  tripadvisor  ·  47 reviews</text>
+  <!-- Booking widget -->
+  <rect x="110" y="315" width="580" height="66" rx="2" fill="rgba(249,245,239,0.96)"/>
+  <line x1="255" y1="325" x2="255" y2="371" stroke="#e2d8c8" stroke-width="1"/>
+  <line x1="400" y1="325" x2="400" y2="371" stroke="#e2d8c8" stroke-width="1"/>
+  <line x1="520" y1="325" x2="520" y2="371" stroke="#e2d8c8" stroke-width="1"/>
+  <text x="130" y="340" font-family="Arial, sans-serif" font-size="8" letter-spacing="2" fill="#a09890">CHECK IN</text>
+  <text x="130" y="360" font-family="Georgia, serif" font-size="14" fill="#1a1a1a">dd / mm / yyyy</text>
+  <text x="275" y="340" font-family="Arial, sans-serif" font-size="8" letter-spacing="2" fill="#a09890">CHECK OUT</text>
+  <text x="275" y="360" font-family="Georgia, serif" font-size="14" fill="#1a1a1a">dd / mm / yyyy</text>
+  <text x="420" y="340" font-family="Arial, sans-serif" font-size="8" letter-spacing="2" fill="#a09890">GUESTS</text>
+  <text x="455" y="362" font-family="Georgia, serif" font-size="16" fill="#1a1a1a" text-anchor="middle">2</text>
+  <rect x="537" y="315" width="153" height="66" fill="#0c1d2f"/>
+  <text x="613" y="352" font-family="Arial, sans-serif" font-size="9" letter-spacing="3" fill="white" text-anchor="middle">CHECK AVAILABILITY</text>
+</svg>

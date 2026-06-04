@@ -194,6 +194,9 @@ After building a demo, register it in `src/data/sites.js`:
 
 Screenshot placeholder SVGs are stored in `public/screenshots/`. When the user takes a real screenshot they update the filename in `sites.js`.
 
+### Location pill must match the H1
+The `location` field in `sites.js` must be copied exactly from the location text used in the site's H1. For example, if the H1 reads "Artisanal Bakery in Plymouth City Centre", the location must be `'Plymouth City Centre'` — not just `'Plymouth'`. Check the H1 before registering the entry.
+
 ---
 
 ## Folder structure reference

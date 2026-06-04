@@ -1,0 +1,1217 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holcombe Cottage | Luxury Seaside Accommodation in Dawlish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --navy:       #0c1d2f;
+      --navy-mid:   #143249;
+      --cream:      #f9f5ef;
+      --cream-dark: #f0ead9;
+      --sand:       #c4a060;
+      --sand-light: #d4b87a;
+      --charcoal:   #1a1a1a;
+      --mid:        #6a6360;
+      --light:      #a09890;
+      --border:     #e2d8c8;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 300;
+      color: var(--charcoal);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    button { font-family: 'Inter', sans-serif; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+    /* ─── HEADER ─── */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: linear-gradient(to bottom, rgba(4,12,24,0.55) 0%, rgba(4,12,24,0.0) 100%);
+      transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+    }
+    header.scrolled {
+      background: rgba(249, 245, 239, 0.97);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 var(--border);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      gap: 3px;
+    }
+    .logo-main {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: 1.3rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #fff;
+      transition: color 0.4s;
+    }
+    .logo-sub {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 0.76rem;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.6);
+      transition: color 0.4s;
+    }
+    header.scrolled .logo-main { color: var(--charcoal); }
+    header.scrolled .logo-sub  { color: var(--mid); }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 2.25rem;
+    }
+    nav a {
+      font-size: 0.74rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.8);
+      transition: color 0.25s;
+    }
+    nav a:hover { color: #fff; }
+    header.scrolled nav a { color: var(--mid); }
+    header.scrolled nav a:hover { color: var(--charcoal); }
+
+    .nav-enquire {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.5rem 1.4rem;
+      border: 1px solid rgba(255,255,255,0.45);
+      color: #fff;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .nav-enquire:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+    header.scrolled .nav-enquire { border-color: var(--charcoal); color: var(--charcoal); }
+    header.scrolled .nav-enquire:hover { background: var(--charcoal); color: #fff; }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.35);
+      cursor: pointer;
+      padding: 0;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 18px;
+      height: 1px;
+      background: #fff;
+      transition: background 0.4s;
+    }
+    header.scrolled .nav-hamburger { border-color: var(--border); }
+    header.scrolled .nav-hamburger span { background: var(--charcoal); }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background:
+        linear-gradient(160deg, rgba(6,15,26,0.16) 0%, rgba(12,29,47,0.18) 100%),
+        url('/images/holcombe-cottage/hero.png') center/cover no-repeat;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(4,12,24,0.58) 0%,
+        rgba(4,12,24,0.48) 45%,
+        rgba(4,12,24,0.72) 100%
+      );
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(196,160,96,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 96px 2rem 5rem;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--sand-light);
+      margin-bottom: 1.1rem;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      line-height: 1.05;
+      color: #fff;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-subtitle {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(0.95rem, 2.2vw, 1.25rem);
+      font-weight: 300;
+      color: rgba(255,255,255,0.88);
+      letter-spacing: 0.06em;
+      margin-bottom: 1.75rem;
+    }
+
+    /* Booking widget */
+    .booking-widget {
+      background: rgba(249,245,239,0.97);
+      backdrop-filter: blur(16px);
+      border-radius: 3px;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.38), 0 4px 16px rgba(0,0,0,0.18);
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .booking-field {
+      flex: 1;
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      border-right: 1px solid var(--border);
+    }
+    .booking-field:last-of-type { border-right: none; }
+    .booking-field label {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .booking-field input[type="date"] {
+      border: none;
+      background: transparent;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      padding: 0;
+      outline: none;
+      width: 100%;
+      cursor: pointer;
+    }
+    .guest-row {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+    .guest-count {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      width: 2rem;
+      text-align: center;
+    }
+    .guest-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--mid);
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+      line-height: 1;
+      font-weight: 300;
+      transition: all 0.2s;
+    }
+    .guest-btn:hover { border-color: var(--charcoal); color: var(--charcoal); }
+    .booking-cta-btn {
+      padding: 0 2rem;
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      min-width: 155px;
+      transition: background 0.25s;
+    }
+    .booking-cta-btn:hover { background: var(--navy-mid); }
+
+    /* Scroll indicator */
+    .hero-scroll {
+      position: absolute;
+      bottom: 1.75rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+    .scroll-line {
+      width: 1px;
+      height: 30px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.55), transparent);
+      animation: scrollPulse 2.2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    /* ─── SHARED SECTION STYLES ─── */
+    section { padding: 5.5rem 0; }
+    .section-label {
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--sand);
+      margin-bottom: 0.9rem;
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+      line-height: 1.2;
+      color: var(--charcoal);
+    }
+    .section-rule {
+      width: 36px;
+      height: 1px;
+      background: var(--sand);
+      margin: 1.4rem 0;
+    }
+
+    /* ─── ABOUT ─── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .about-body {
+      font-size: 0.97rem;
+      line-height: 1.85;
+      color: #4a4340;
+    }
+    .about-body p + p { margin-top: 1.2rem; }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+    .stat-item {
+      background: var(--cream);
+      padding: 1.75rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .stat-label {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .stat-value {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1.2;
+    }
+
+    /* ─── AMENITIES ─── */
+    .amenities-section { background: var(--navy); }
+    .amenities-section .section-label { color: var(--sand-light); }
+    .amenities-section h2 { color: #fff; }
+    .amenities-section .section-rule { background: rgba(255,255,255,0.2); }
+
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-top: 3rem;
+    }
+    .amenity {
+      padding: 2.5rem 2rem;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .amenity:nth-child(3n) { border-right: none; }
+    .amenity:nth-child(n+4) { border-bottom: none; }
+    .amenity-icon { color: var(--sand); }
+    .amenity-icon svg { width: 26px; height: 26px; }
+    .amenity-name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: #fff;
+    }
+    .amenity-desc {
+      font-size: 0.8rem;
+      line-height: 1.55;
+      color: rgba(255,255,255,0.68);
+    }
+
+    /* ─── GALLERY ─── */
+    .gallery-header { margin-bottom: 2.5rem; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 250px 250px;
+      gap: 0.4rem;
+    }
+    .gallery-item {
+      background: var(--cream-dark);
+      position: relative;
+      overflow: hidden;
+    }
+    .gallery-item:first-child { grid-row: span 2; }
+    /* PLACEHOLDER: add background-image to each .gallery-item when images are available */
+    .gallery-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light);
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    /* ─── REVIEWS ─── */
+    .reviews-section { background: var(--cream-dark); }
+
+    .reviews-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .ta-score-block {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+    }
+    .ta-score-num {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 3.2rem;
+      font-weight: 300;
+      line-height: 1;
+      color: var(--charcoal);
+    }
+    .ta-score-info { display: flex; flex-direction: column; gap: 0.3rem; }
+    .ta-score-label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .ta-score-bubbles { display: flex; gap: 3px; }
+    .ta-score-bubbles .tb { width: 13px; height: 13px; border-radius: 50%; background: #34E0A1; }
+    .ta-cert {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      color: var(--mid);
+    }
+    .ta-cert svg { width: 15px; height: 15px; color: #34E0A1; }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    .review-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .rev-bubbles { display: flex; gap: 3px; }
+    .rev-bubbles .rb { width: 11px; height: 11px; border-radius: 50%; background: #34E0A1; }
+    .rev-quote {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--charcoal);
+      line-height: 1.65;
+      flex: 1;
+    }
+    .rev-meta { display: flex; flex-direction: column; gap: 0.2rem; }
+    .rev-name {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      letter-spacing: 0.02em;
+    }
+    .rev-date {
+      font-size: 0.72rem;
+      color: var(--mid);
+    }
+
+    /* ─── ENQUIRE ─── */
+    .enquire-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .enquire-intro {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: #4a4340;
+      margin-top: 1rem;
+    }
+    .enquire-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+      font-size: 0.88rem;
+      color: var(--mid);
+    }
+    .enquire-detail svg { width: 17px; height: 17px; color: var(--sand); flex-shrink: 0; margin-top: 0.1rem; }
+
+    form { display: flex; flex-direction: column; gap: 0.9rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
+    .form-group label {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      border: 1px solid var(--border);
+      background: #fff;
+      padding: 0.8rem 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 300;
+      color: var(--charcoal);
+      outline: none;
+      transition: border-color 0.2s;
+      border-radius: 0;
+      -webkit-appearance: none;
+      width: 100%;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--sand); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .btn-submit {
+      align-self: flex-start;
+      padding: 0.9rem 2.5rem;
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      transition: background 0.25s;
+      margin-top: 0.25rem;
+    }
+    .btn-submit:hover { background: var(--navy-mid); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #111820;
+      color: rgba(255,255,255,0.62);
+      padding: 3.5rem 0 2rem;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .fb-name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.25rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 0.2rem;
+    }
+    .fb-tagline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 1.25rem;
+    }
+    .fb-address {
+      font-size: 0.82rem;
+      line-height: 1.8;
+    }
+    .footer-social {
+      display: flex;
+      gap: 0.65rem;
+      margin-top: 1.5rem;
+    }
+    .soc-icon {
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .soc-icon:hover { border-color: rgba(255,255,255,0.35); }
+    .soc-icon svg { width: 15px; height: 15px; color: rgba(255,255,255,0.5); }
+
+    .footer-col h4 {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 1.25rem;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 0.6rem; font-size: 0.83rem; }
+    .footer-col a:hover { color: rgba(255,255,255,0.75); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.75rem;
+      font-size: 0.74rem;
+    }
+
+    /* ─── WHATSAPP ─── */
+    /* PLACEHOLDER: replace wa.me number with real WhatsApp number */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #25D366;
+      color: #fff;
+      padding: 0.65rem 1.1rem 0.65rem 0.65rem;
+      border-radius: 50px;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.38);
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .whatsapp-float:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 26px rgba(37,211,102,0.5);
+    }
+    .whatsapp-float svg { width: 24px; height: 24px; flex-shrink: 0; }
+    @media (max-width: 480px) {
+      .whatsapp-label { display: none; }
+      .whatsapp-float { padding: 0.65rem; border-radius: 50%; }
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      nav, .nav-enquire { display: none; }
+      .nav-hamburger { display: flex; }
+
+      .hero-inner { padding: 88px 1.5rem 4rem; }
+
+      .booking-widget {
+        flex-direction: column;
+        max-width: 100%;
+      }
+      .booking-field {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 1.25rem;
+      }
+      .booking-cta-btn { padding: 1.1rem 1.5rem; min-width: auto; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-stats { grid-template-columns: 1fr 1fr; }
+
+      .amenities-grid { grid-template-columns: 1fr 1fr; }
+      .amenity:nth-child(2n) { border-right: none; }
+      .amenity:nth-child(3n) { border-right: 1px solid rgba(255,255,255,0.08); }
+      .amenity:nth-child(2n+1):nth-last-child(-n+2),
+      .amenity:nth-child(2n+2):nth-last-child(-n+1) { border-bottom: none; }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 180px);
+      }
+      .gallery-item:first-child { grid-row: span 1; }
+
+      .reviews-top { flex-direction: column; }
+      .reviews-grid { grid-template-columns: 1fr; }
+
+      .enquire-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; gap: 0.65rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <span class="logo-main">Holcombe Cottage</span>
+        </a>
+        <nav>
+          <a href="#about">The Cottage</a>
+          <a href="#amenities">Amenities</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+        <a href="#enquire" class="nav-enquire">Enquire</a>
+        <button class="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Dawlish, South Devon</p>
+      <h1>Holcombe Cottage</h1>
+      <p class="hero-subtitle">Luxury Seaside Accommodation in Dawlish</p>
+
+      <!-- Booking widget -->
+      <div class="booking-widget">
+        <div class="booking-field">
+          <label for="checkin">Check In</label>
+          <input type="date" id="checkin" name="checkin" />
+        </div>
+        <div class="booking-field">
+          <label for="checkout">Check Out</label>
+          <input type="date" id="checkout" name="checkout" />
+        </div>
+        <div class="booking-field">
+          <label>Guests</label>
+          <div class="guest-row">
+            <button class="guest-btn" id="guest-minus" type="button">&#8722;</button>
+            <span class="guest-count" id="guest-count">2</span>
+            <button class="guest-btn" id="guest-plus" type="button">&#43;</button>
+          </div>
+        </div>
+        <button class="booking-cta-btn" type="button">Check Availability</button>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <p class="section-label">About the Property</p>
+          <h2>A clifftop retreat above Lyme Bay</h2>
+          <div class="section-rule"></div>
+          <div class="about-body">
+            <p>Holcombe Cottage is a beautifully restored Victorian seaside cottage perched above the red cliffs of Dawlish, offering uninterrupted views across Lyme Bay and the English Channel. Three individually styled bedrooms sleep up to six guests in complete comfort, blending original period character with thoughtfully chosen contemporary finishes.</p>
+            <p>Just steps from the South West Coast Path and a short walk to Dawlish's sandy beach and town centre, it is the ideal base for exploring South Devon's coastline, the Jurassic Coast, and Dartmoor National Park beyond.</p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-label">Bedrooms</span>
+            <span class="stat-value">3 en-suite</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Guests</span>
+            <span class="stat-value">Up to 6</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Beach</span>
+            <span class="stat-value">5 min walk</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Min stay</span>
+            <span class="stat-value">2 nights</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section id="amenities" class="amenities-section">
+    <div class="container">
+      <p class="section-label">What's Included</p>
+      <h2>Every comfort considered</h2>
+      <div class="section-rule"></div>
+
+      <div class="amenities-grid">
+        <!-- Sea Views -->
+        <div class="amenity">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18c0 0 2-2 5-2s4 2 7 2 5-2 5-2"/>
+              <path d="M3 14c0 0 2-2 5-2s4 2 7 2 5-2 5-2"/>
+              <path d="M12 2v4M4.93 4.93l2.83 2.83M19.07 4.93l-2.83 2.83"/>
+              <circle cx="12" cy="10" r="2"/>
+            </svg>
+          </div>
+          <div class="amenity-name">Sea Views</div>
+          <div class="amenity-desc">Panoramic views across Lyme Bay from the main bedroom, living room, and private terrace.</div>
+        </div>
+
+        <!-- Private Terrace -->
+        <div class="amenity">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="10" width="18" height="11" rx="1"/>
+              <path d="M3 10l9-7 9 7"/>
+              <line x1="9" y1="21" x2="9" y2="14"/>
+              <line x1="15" y1="21" x2="15" y2="14"/>
+            </svg>
+          </div>
+          <div class="amenity-name">Private Terrace</div>
+          <div class="amenity-desc">A secluded walled garden and sun terrace with outdoor seating and coastal views.</div>
+        </div>
+
+        <!-- Wood Burner -->
+        <div class="amenity">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2c0 4-4 6-4 10a4 4 0 0 0 8 0c0-4-4-6-4-10z"/>
+              <path d="M12 12c0 2-1.5 3-1.5 4a1.5 1.5 0 0 0 3 0c0-1-1.5-2-1.5-4z"/>
+              <line x1="6" y1="21" x2="18" y2="21"/>
+              <line x1="9" y1="18" x2="9" y2="21"/>
+              <line x1="15" y1="18" x2="15" y2="21"/>
+            </svg>
+          </div>
+          <div class="amenity-name">Wood Burning Stove</div>
+          <div class="amenity-desc">A cast iron log burner in the sitting room, with a full basket of logs provided on arrival.</div>
+        </div>
+
+        <!-- Dog Friendly -->
+        <div class="amenity">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 2.261C7.269 13.553 8 15.265 8 17h8c0-1.735.731-3.447 1.844-4.738C19.775 11.722 21.42 10.703 21.5 10c.113-.994-1.177-6.53-4-7-1.923-.321-3.5.782-3.5 2.172"/>
+              <path d="M8 14v.5"/>
+              <path d="M16 14v.5"/>
+              <path d="M11.25 16.25h1.5L12 17z"/>
+            </svg>
+          </div>
+          <div class="amenity-name">Dog Friendly</div>
+          <div class="amenity-desc">Well-behaved dogs are welcome. The garden is secure and the coast path is right on the doorstep.</div>
+        </div>
+
+        <!-- Kitchen -->
+        <div class="amenity">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3h18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3z"/>
+              <path d="M3 7v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7"/>
+              <line x1="8" y1="12" x2="8" y2="18"/>
+              <line x1="12" y1="10" x2="12" y2="18"/>
+              <line x1="16" y1="13" x2="16" y2="18"/>
+            </svg>
+          </div>
+          <div class="amenity-name">Fully Equipped Kitchen</div>
+          <div class="amenity-desc">A designer kitchen with range cooker, dishwasher, and everything needed for home cooking.</div>
+        </div>
+
+        <!-- Parking & WiFi -->
+        <div class="amenity">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+              <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+              <circle cx="12" cy="20" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="amenity-name">High-Speed WiFi</div>
+          <div class="amenity-desc">Superfast broadband throughout, plus private off-road parking for two vehicles.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <div class="gallery-header">
+        <p class="section-label">The Property</p>
+        <h2>Spaces designed to delight</h2>
+      </div>
+      <!-- PLACEHOLDER: add background-image: url('/images/holcombe-cottage/[name].jpg') to each .gallery-item -->
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <span class="gallery-label">Living Room</span>
+        </div>
+        <div class="gallery-item">
+          <span class="gallery-label">Main Bedroom</span>
+        </div>
+        <div class="gallery-item">
+          <span class="gallery-label">Sea View</span>
+        </div>
+        <div class="gallery-item">
+          <span class="gallery-label">Kitchen</span>
+        </div>
+        <div class="gallery-item">
+          <span class="gallery-label">Terrace</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <!-- PLACEHOLDER: replace with real TripAdvisor review data -->
+      <div class="reviews-top">
+        <div>
+          <p class="section-label">Guest Reviews</p>
+          <h2>What our guests say</h2>
+        </div>
+        <div class="ta-score-block">
+          <!-- TripAdvisor owl logo (small) -->
+          <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="56" r="40" fill="#34E0A1"/>
+            <polygon points="28,34 33,50 23,50" fill="#34E0A1"/>
+            <polygon points="72,34 77,50 67,50" fill="#34E0A1"/>
+            <circle cx="34" cy="60" r="15" fill="white"/>
+            <circle cx="66" cy="60" r="15" fill="white"/>
+            <circle cx="34" cy="60" r="10" fill="#E8504A"/>
+            <circle cx="66" cy="60" r="10" fill="#00AF87"/>
+            <circle cx="37" cy="57" r="4" fill="white"/>
+            <circle cx="69" cy="57" r="4" fill="white"/>
+            <polygon points="44,69 50,78 56,69" fill="#FF9100"/>
+          </svg>
+          <div>
+            <div class="ta-score-num">5.0</div>
+            <div class="ta-score-info">
+              <div class="ta-score-bubbles">
+                <div class="tb"></div><div class="tb"></div><div class="tb"></div><div class="tb"></div><div class="tb"></div>
+              </div>
+              <div class="ta-score-label">47 reviews on tripadvisor</div>
+              <div class="ta-cert">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+                Certificate of Excellence 2025
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="rev-bubbles">
+            <div class="rb"></div><div class="rb"></div><div class="rb"></div><div class="rb"></div><div class="rb"></div>
+          </div>
+          <p class="rev-quote">"Absolutely stunning views from every window. We've stayed in many holiday cottages across Devon but Holcombe is in a class of its own. The kitchen has everything you could need and the garden is perfect for evenings watching the sunset over the sea."</p>
+          <div class="rev-meta">
+            <span class="rev-name">Sarah T, Bristol</span>
+            <span class="rev-date">Stayed June 2025</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-bubbles">
+            <div class="rb"></div><div class="rb"></div><div class="rb"></div><div class="rb"></div><div class="rb"></div>
+          </div>
+          <p class="rev-quote">"We brought our two dogs and the whole family. Holcombe Cottage couldn't have been more welcoming. Spotlessly clean, beautifully furnished, and the location right on the coast path is unbeatable. Already booked for next summer."</p>
+          <div class="rev-meta">
+            <span class="rev-name">James and Helen, London</span>
+            <span class="rev-date">Stayed August 2025</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="rev-bubbles">
+            <div class="rb"></div><div class="rb"></div><div class="rb"></div><div class="rb"></div><div class="rb"></div>
+          </div>
+          <p class="rev-quote">"A perfect romantic escape. The master bedroom with its sea views was simply magical. We lit the wood burner on our first evening and barely wanted to leave. The owners are wonderfully attentive. We will absolutely be returning."</p>
+          <div class="rev-meta">
+            <span class="rev-name">Claire M, Cardiff</span>
+            <span class="rev-date">Stayed September 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRE -->
+  <section id="enquire">
+    <div class="container">
+      <div class="enquire-grid">
+        <div>
+          <p class="section-label">Get in Touch</p>
+          <h2>Enquire about a stay</h2>
+          <div class="section-rule"></div>
+          <p class="enquire-intro">For availability, pricing, and booking enquiries, please use the form or get in touch directly. We reply to all enquiries within 24 hours.</p>
+
+          <div class="enquire-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.16 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.07 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 5.92 5.92l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <!-- PLACEHOLDER: replace with real phone number -->
+            <span>01234 567890</span>
+          </div>
+          <div class="enquire-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <!-- PLACEHOLDER: replace with real email address -->
+            <span>hello@holcombecottage.co.uk</span>
+          </div>
+          <div class="enquire-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Holcombe, Dawlish, Devon, EX7 0NA</span>
+          </div>
+        </div>
+
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Full Name</label>
+              <input type="text" id="f-name" name="name" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-checkin">Check In</label>
+              <input type="date" id="f-checkin" name="checkin" />
+            </div>
+            <div class="form-group">
+              <label for="f-checkout">Check Out</label>
+              <input type="date" id="f-checkout" name="checkout" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-guests">Number of Guests</label>
+            <select id="f-guests" name="guests">
+              <option value="">Select guests</option>
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" placeholder="Any questions or special requirements..."></textarea>
+          </div>
+          <button class="btn-submit" type="submit">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="fb-name">Holcombe</div>
+          <div class="fb-tagline">Cottage, Dawlish</div>
+          <div class="fb-address">
+            Holcombe, Dawlish<br>
+            Devon, EX7 0NA<br>
+            <!-- PLACEHOLDER: replace with real contact details -->
+            01234 567890<br>
+            hello@holcombecottage.co.uk
+          </div>
+          <div class="footer-social">
+            <!-- Instagram -->
+            <div class="soc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <!-- Facebook -->
+            <div class="soc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </div>
+            <!-- Pinterest -->
+            <div class="soc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.76 1.22-5.18 1.22-5.18s-.31-.63-.31-1.56c0-1.46.85-2.55 1.9-2.55.9 0 1.33.67 1.33 1.48 0 .9-.58 2.26-.87 3.51-.25 1.05.52 1.9 1.54 1.9 1.85 0 3.09-2.37 3.09-5.17 0-2.14-1.44-3.63-3.5-3.63-2.38 0-3.78 1.79-3.78 3.63 0 .72.28 1.49.62 1.91.07.08.08.15.06.23-.06.26-.2.83-.23.94-.04.15-.13.18-.3.11-1.12-.52-1.82-2.16-1.82-3.48 0-2.83 2.06-5.43 5.93-5.43 3.11 0 5.53 2.22 5.53 5.18 0 3.09-1.95 5.57-4.65 5.57-.91 0-1.76-.47-2.05-1.03l-.56 2.08c-.2.78-.75 1.75-1.12 2.34.84.26 1.74.4 2.67.4 5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>The Cottage</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Plan Your Stay</h4>
+          <ul>
+            <li><a href="#enquire">Check Availability</a></li>
+            <li><a href="#enquire">Make an Enquiry</a></li>
+            <li>Arrival &amp; Departure</li>
+            <li>Local Attractions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Holcombe Cottage. All rights reserved.</span>
+        <span>Dawlish, South Devon</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <!-- PLACEHOLDER: replace with real WhatsApp number -->
+  <a href="https://wa.me/441234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-label">WhatsApp</span>
+  </a>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    // Guest counter
+    let guestCount = 2;
+    const countEl = document.getElementById('guest-count');
+    document.getElementById('guest-minus').addEventListener('click', () => {
+      if (guestCount > 1) { guestCount--; countEl.textContent = guestCount; }
+    });
+    document.getElementById('guest-plus').addEventListener('click', () => {
+      if (guestCount < 6) { guestCount++; countEl.textContent = guestCount; }
+    });
+  </script>
+</body>
+</html>
