@@ -210,12 +210,26 @@
       flex: 1; max-width: 280px;
       aspect-ratio: 3/4; border-radius: 180px;
       overflow: hidden; position: relative;
+      background: var(--bg-card);
     }
-    .hero-oval-1 { background: linear-gradient(155deg, #D4B896 0%, #9E7250 100%); }
-    .hero-oval-2 { background: linear-gradient(155deg, #C5B5A5 0%, #8A7060 100%); margin-top: -2rem; }
-    .hero-oval-3 { background: linear-gradient(155deg, #B8C8A0 0%, #78926A 100%); }
+    .hero-oval-2 { margin-top: -2rem; }
+    .hero-oval img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+    .hero-oval::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(45,29,20,0.58), rgba(45,29,20,0.04) 58%);
+      pointer-events: none;
+    }
     .hero-oval-label {
       position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%);
+      z-index: 1;
       font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
       color: rgba(255,255,255,0.82); white-space: nowrap;
     }
@@ -525,9 +539,18 @@
     </div>
 
     <div class="hero-images">
-      <div class="hero-oval hero-oval-1"><span class="hero-oval-label">Yoga Classes</span></div>
-      <div class="hero-oval hero-oval-2"><span class="hero-oval-label">Massage Therapy</span></div>
-      <div class="hero-oval hero-oval-3"><span class="hero-oval-label">Our Studio</span></div>
+      <div class="hero-oval hero-oval-1">
+        <img src="/images/riviera-yoga/hero-yoga-classes.png" alt="Gentle yoga class in a calm studio" loading="eager" decoding="async" />
+        <span class="hero-oval-label">Yoga Classes</span>
+      </div>
+      <div class="hero-oval hero-oval-2">
+        <img src="/images/riviera-yoga/hero-massage-therapy.png" alt="Massage therapy treatment in a calm wellness room" loading="eager" decoding="async" />
+        <span class="hero-oval-label">Massage Therapy</span>
+      </div>
+      <div class="hero-oval hero-oval-3">
+        <img src="/images/riviera-yoga/hero-studio.png" alt="Peaceful yoga studio with mats and natural daylight" loading="eager" decoding="async" />
+        <span class="hero-oval-label">Our Studio</span>
+      </div>
     </div>
   </section>
 
