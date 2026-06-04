@@ -1,0 +1,742 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>True Health Massage | Massage &amp; Soft Tissue Therapy in Paignton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --bg:       #FAF8F4;
+      --bg-card:  #F2EDE6;
+      --bg-dark:  #1C3828;
+      --text:     #1A2820;
+      --mid:      #4D6558;
+      --light:    #7A9487;
+      --border:   #DDD5C8;
+      --accent:   #C45B2A;
+      --accent-h: #A84A20;
+      --cream:    #FDFBF8;
+    }
+
+    body { font-family: 'DM Sans', system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* NAV */
+    header { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 200; }
+    .nav-inner { display: grid; grid-template-columns: auto 1fr auto; align-items: center; height: 68px; gap: 1rem; }
+
+    .nav-logo { display: flex; align-items: center; gap: 0.6rem; flex-shrink: 0; }
+    .nav-logo-icon {
+      width: 32px; height: 32px;
+      background: var(--bg-dark); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; flex-shrink: 0;
+    }
+    .nav-logo-icon svg { width: 16px; height: 16px; }
+    .nav-logo-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; font-weight: 600; color: var(--text); line-height: 1.1; }
+    .nav-logo-sub { font-size: 0.6rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mid); }
+
+    .nav-links { display: flex; gap: 2rem; list-style: none; justify-content: center; }
+    .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--mid); letter-spacing: 0.02em; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-right { display: flex; align-items: center; gap: 0.6rem; flex-shrink: 0; }
+
+    .btn-nav-phone {
+      display: flex; align-items: center; gap: 0.4rem;
+      padding: 0.5rem 1.1rem;
+      border: 1.5px solid var(--bg-dark); border-radius: 50px;
+      font-size: 0.85rem; font-weight: 600; color: var(--bg-dark);
+      transition: all 0.2s; white-space: nowrap;
+    }
+    .btn-nav-phone svg { width: 12px; height: 12px; }
+    .btn-nav-phone:hover { background: var(--bg-dark); color: #fff; }
+
+    .btn-nav-book {
+      display: inline-flex; align-items: center;
+      padding: 0.5rem 1.1rem;
+      background: var(--accent); color: #fff;
+      border-radius: 50px;
+      font-size: 0.85rem; font-weight: 600;
+      transition: all 0.2s; white-space: nowrap;
+    }
+    .btn-nav-book:hover { background: var(--accent-h); transform: translateY(-1px); }
+
+    .nav-phone-mobile { display: none; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--bg-dark); border-radius: 8px; color: #fff; }
+    .nav-hamburger { display: none; align-items: center; justify-content: center; width: 40px; height: 40px; background: transparent; border: 1.5px solid var(--border); border-radius: 8px; cursor: pointer; color: var(--text); }
+
+    @media (max-width: 768px) {
+      .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+      .nav-links, .btn-nav-phone, .btn-nav-book { display: none; }
+      .nav-phone-mobile { display: flex; }
+      .nav-hamburger { display: flex; }
+    }
+
+    /* HERO */
+    .hero { background: var(--bg); padding: 3.5rem 0 3rem; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 400px; gap: 4rem; align-items: center; }
+
+    .hero-eyebrow { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      font-weight: 600; line-height: 1.15;
+      color: var(--text); margin-bottom: 1rem;
+    }
+    .hero h1 em { font-style: italic; font-weight: 400; }
+
+    .hero-sub { font-size: 0.95rem; color: var(--mid); line-height: 1.75; margin-bottom: 1.25rem; }
+
+    .hero-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem; }
+    .hero-bullets li { display: flex; align-items: center; gap: 0.55rem; font-size: 0.875rem; color: var(--mid); font-weight: 500; }
+    .bcheck { width: 18px; height: 18px; background: rgba(28,56,40,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .bcheck svg { width: 9px; height: 9px; }
+
+    /* PLACEHOLDER: replace with real Google review data */
+    .hero-reviews {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: var(--cream); border: 1px solid var(--border);
+      border-radius: 50px; padding: 0.45rem 1rem;
+      margin-bottom: 1.5rem; font-size: 0.8rem; color: var(--mid);
+    }
+    .stars { color: #FBBC05; }
+
+    .hero-ctas { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      padding: 0.85rem 1.75rem;
+      background: var(--bg-dark); color: #fff;
+      border-radius: 50px; font-size: 0.9rem; font-weight: 600;
+      box-shadow: 0 4px 14px rgba(28,56,40,0.22);
+      transition: all 0.25s;
+    }
+    .btn-primary:hover { background: #143020; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(28,56,40,0.3); }
+    .btn-primary svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      padding: 0.85rem 1.75rem;
+      background: var(--accent); color: #fff;
+      border-radius: 50px; font-size: 0.9rem; font-weight: 600;
+      box-shadow: 0 4px 14px rgba(196,91,42,0.22);
+      transition: all 0.25s;
+    }
+    .btn-secondary:hover { background: var(--accent-h); transform: translateY(-2px); }
+    .btn-secondary svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+    .hero-image-wrap { position: relative; }
+    .hero-img-accent {
+      position: absolute; top: -1.5rem; right: -1.5rem;
+      width: 120px; height: 120px; border-radius: 50%;
+      background: var(--accent); opacity: 0.1; z-index: 0;
+    }
+    /* PLACEHOLDER: replace with real treatment room photo */
+    .hero-img-main {
+      position: relative; z-index: 1;
+      width: 100%; aspect-ratio: 3/4;
+      border-radius: 200px 200px 32px 32px;
+      background: linear-gradient(150deg, #C0D4C8 0%, #5A7A68 55%, #1C3828 100%);
+      overflow: hidden;
+    }
+    .hero-img-badge {
+      position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+      background: rgba(255,255,255,0.94); border-radius: 50px;
+      padding: 0.5rem 1.25rem; display: flex; align-items: center; gap: 0.5rem; white-space: nowrap;
+    }
+    .hero-img-badge strong { font-size: 0.8rem; font-weight: 700; color: var(--bg-dark); }
+    .hero-img-badge span { font-size: 0.72rem; color: var(--mid); }
+
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-image-wrap { display: none; }
+      .hero { padding: 2rem 0; }
+    }
+
+    /* TRUST BAR */
+    .trust-bar { background: var(--bg-dark); padding: 2rem 0; }
+    .trust-inner { display: flex; justify-content: center; align-items: center; gap: 0; flex-wrap: wrap; }
+    .trust-item { text-align: center; padding: 0.5rem 2.5rem; }
+    .trust-item strong { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.9rem; font-weight: 600; line-height: 1.1; color: #fff; }
+    .trust-item span { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+    .trust-div { width: 1px; height: 40px; background: rgba(255,255,255,0.12); }
+    @media (max-width: 600px) { .trust-div { display: none; } .trust-item { padding: 0.5rem 1.5rem; } }
+
+    /* SECTION HEADERS */
+    .section-header { text-align: center; margin-bottom: 3rem; }
+    .section-eyebrow { display: block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+    .section-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 600; line-height: 1.2; color: var(--text); }
+    .section-title em { font-style: italic; font-weight: 400; }
+    .section-sub { font-size: 0.92rem; color: var(--mid); max-width: 500px; margin: 0.75rem auto 0; line-height: 1.7; }
+
+    /* SERVICES */
+    .services { padding: 5rem 0; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .service-card {
+      background: var(--cream); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.75rem; transition: all 0.25s;
+    }
+    .service-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(28,56,40,0.1); border-color: var(--light); }
+    .svc-icon {
+      width: 46px; height: 46px;
+      background: rgba(28,56,40,0.08); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--bg-dark); margin-bottom: 1rem;
+    }
+    .svc-icon svg { width: 22px; height: 22px; }
+    .service-card h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.25rem; font-weight: 600; color: var(--text); margin-bottom: 0.3rem; }
+    .svc-duration { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.65rem; }
+    .service-card p { font-size: 0.875rem; color: var(--mid); line-height: 1.7; }
+    @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; } }
+    @media (min-width: 769px) and (max-width: 960px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    /* REVIEWS */
+    .reviews { background: var(--bg-card); padding: 5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .reviews-score { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 2.75rem; }
+    .big-stars { font-size: 1.5rem; color: #FBBC05; }
+    .reviews-score-text strong { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; font-weight: 600; line-height: 1; }
+    .reviews-score-text span { font-size: 0.8rem; color: var(--mid); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .review-card { background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 1.75rem; }
+    .review-stars { color: #FBBC05; font-size: 0.9rem; margin-bottom: 0.75rem; }
+    .review-card blockquote { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.05rem; font-style: italic; line-height: 1.75; color: var(--text); margin-bottom: 1rem; }
+    .review-author { font-size: 0.82rem; font-weight: 600; color: var(--text); }
+    .review-location { font-size: 0.75rem; color: var(--mid); }
+    @media (max-width: 768px) { .reviews-grid { grid-template-columns: 1fr; } }
+
+    /* ABOUT */
+    .about { padding: 5rem 0; }
+    .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: center; }
+    /* PLACEHOLDER: replace with real studio or therapist photo */
+    .about-img {
+      aspect-ratio: 4/5; border-radius: 200px 200px 32px 32px;
+      background: linear-gradient(150deg, #B8CCBE 0%, #4A7060 55%, #1C3828 100%);
+    }
+    .about h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 600; line-height: 1.25; color: var(--text); margin-bottom: 1.25rem; }
+    .about h2 em { font-style: italic; font-weight: 400; }
+    .about-text { font-size: 0.9rem; color: var(--mid); line-height: 1.85; margin-bottom: 0.9rem; }
+    .about-features { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin-top: 1.75rem; }
+    .about-features li { display: flex; align-items: center; gap: 0.5rem; font-size: 0.84rem; font-weight: 500; color: var(--text); }
+    .feat-check { width: 20px; height: 20px; background: rgba(28,56,40,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .feat-check svg { width: 10px; height: 10px; color: var(--bg-dark); }
+    @media (max-width: 768px) {
+      .about-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .about-img { aspect-ratio: 16/9; border-radius: 16px; }
+    }
+
+    /* CONTACT */
+    .contact { background: var(--bg-card); padding: 5rem 0; border-top: 1px solid var(--border); }
+    .contact-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: start; }
+    .contact-info h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 600; line-height: 1.25; margin-bottom: 1rem; }
+    .contact-info h2 em { font-style: italic; font-weight: 400; }
+    .contact-info > p { font-size: 0.9rem; color: var(--mid); line-height: 1.75; margin-bottom: 2rem; }
+    .contact-details { display: flex; flex-direction: column; gap: 0.85rem; }
+    .contact-detail { display: flex; align-items: center; gap: 0.75rem; font-size: 0.875rem; color: var(--mid); }
+    .c-icon { width: 36px; height: 36px; background: rgba(28,56,40,0.08); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--bg-dark); flex-shrink: 0; }
+    .c-icon svg { width: 16px; height: 16px; }
+    .contact-detail a { color: var(--text); font-weight: 600; }
+    .contact-detail a:hover { color: var(--accent); }
+
+    .contact-form { background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: 2.25rem; }
+    .contact-form h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; font-weight: 600; color: var(--text); margin-bottom: 1.5rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+    .form-row .form-group { margin-bottom: 0; }
+    label { font-size: 0.75rem; font-weight: 700; color: var(--text); letter-spacing: 0.04em; text-transform: uppercase; }
+    input, select, textarea {
+      width: 100%; padding: 0.7rem 1rem;
+      border: 1.5px solid var(--border); border-radius: 10px;
+      background: var(--bg-card); color: var(--text);
+      font-family: 'DM Sans', sans-serif; font-size: 0.875rem;
+      outline: none; transition: border-color 0.2s;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--bg-dark); }
+    textarea { resize: vertical; min-height: 90px; }
+    .form-submit {
+      width: 100%; padding: 0.9rem;
+      background: var(--bg-dark); color: #fff;
+      border: none; border-radius: 50px;
+      font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 600;
+      cursor: pointer; margin-top: 0.5rem; transition: all 0.25s;
+    }
+    .form-submit:hover { background: #143020; transform: translateY(-2px); }
+    @media (max-width: 768px) { .contact-inner { grid-template-columns: 1fr; gap: 2rem; } .form-row { grid-template-columns: 1fr; } }
+
+    /* FOOTER */
+    footer { background: var(--bg-dark); color: #fff; padding: 3.5rem 0 2rem; }
+    .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
+    .footer-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; font-weight: 600; margin-bottom: 0.2rem; }
+    .footer-tag { font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.45; margin-bottom: 0.75rem; }
+    .footer-brand p { font-size: 0.85rem; opacity: 0.55; line-height: 1.75; max-width: 280px; }
+    .footer-socials { display: flex; gap: 0.5rem; margin-top: 1.25rem; }
+    .footer-social { width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.55); cursor: pointer; transition: all 0.2s; }
+    .footer-social:hover { border-color: rgba(255,255,255,0.4); color: #fff; }
+    .footer-social svg { width: 15px; height: 15px; }
+    .footer-col h4 { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.45; margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { font-size: 0.875rem; opacity: 0.65; margin-bottom: 0.5rem; }
+    .footer-col a { opacity: 0.65; transition: opacity 0.2s; }
+    .footer-col a:hover { opacity: 1; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; display: flex; justify-content: space-between; font-size: 0.78rem; opacity: 0.4; }
+    @media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr; gap: 2rem; } .footer-bottom { flex-direction: column; gap: 0.5rem; } }
+
+    /* WHATSAPP */
+    .whatsapp-btn {
+      position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 9999;
+      display: flex; align-items: center; gap: 0.55rem;
+      background: #25D366; color: #fff;
+      padding: 0.75rem 1.25rem; border-radius: 50px;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+      font-size: 0.875rem; font-weight: 600; transition: all 0.25s;
+    }
+    .whatsapp-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(37,211,102,0.45); }
+    .whatsapp-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+    @media (max-width: 480px) { .whatsapp-btn { padding: 0.75rem; border-radius: 50%; } .wa-label { display: none; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 11V9a2 2 0 0 0-4 0v1M14 10V8a2 2 0 0 0-4 0v2M10 10.5V7a2 2 0 0 0-4 0v6"/>
+              <path d="M18 11a2 2 0 1 1 4 0v2a8 8 0 0 1-8 8H8a8 8 0 0 1-8-8V9a2 2 0 0 1 4 0"/>
+            </svg>
+          </div>
+          <div>
+            <div class="nav-logo-name">True Health Massage</div>
+            <div class="nav-logo-sub">Paignton Studio</div>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#services">Treatments</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <!-- PLACEHOLDER: replace with real phone number -->
+          <a href="tel:01803000000" class="btn-nav-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.91-1.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 15.28z"/>
+            </svg>
+            01803 000000
+          </a>
+          <a href="#contact" class="btn-nav-book">Book Online</a>
+          <a href="tel:01803000000" class="nav-phone-mobile" aria-label="Call us">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.91-1.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 15.28z"/>
+            </svg>
+          </a>
+          <button class="nav-hamburger" aria-label="Open menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18">
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+        <div>
+          <span class="hero-eyebrow">Paignton Studio · Est. 2019</span>
+          <h1>Massage &amp; Soft Tissue<br><em>Therapy in Paignton</em></h1>
+          <p class="hero-sub">Expert hands-on therapy for pain relief, recovery and deep relaxation. Qualified, CNHC-registered therapists tailored to your body.</p>
+          <ul class="hero-bullets">
+            <li>
+              <span class="bcheck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              CNHC registered and fully insured therapists
+            </li>
+            <li>
+              <span class="bcheck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Personalised treatment plans for every client
+            </li>
+            <li>
+              <span class="bcheck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Relaxation and remedial treatments under one roof
+            </li>
+          </ul>
+          <!-- PLACEHOLDER: replace with real Google review data -->
+          <div class="hero-reviews">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            <span class="stars">★★★★★</span>
+            <span>4.8 · 126 reviews on Google</span>
+          </div>
+          <div class="hero-ctas">
+            <!-- PLACEHOLDER: replace with real phone number -->
+            <a href="tel:01803000000" class="btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.91-1.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 15.28z"/>
+              </svg>
+              Call 01803 000000
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              Book a Treatment
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <div class="hero-img-accent"></div>
+          <div class="hero-img-main">
+            <div class="hero-img-badge">
+              <strong>Treatment Room</strong>
+              <span>Paignton Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="trust-item"><strong>Est. 2019</strong><span>Serving Torbay</span></div>
+        <div class="trust-div"></div>
+        <div class="trust-item"><strong>2,000+</strong><span>Treatments Delivered</span></div>
+        <div class="trust-div"></div>
+        <div class="trust-item"><strong>4.8 ★</strong><span>126 Google Reviews</span></div>
+        <div class="trust-div"></div>
+        <div class="trust-item"><strong>CNHC</strong><span>Registered Therapists</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Our treatments</span>
+        <h2 class="section-title">Therapy for <em>Every Need</em></h2>
+        <p class="section-sub">From classic relaxation massage to targeted soft tissue work, all treatments are tailored to you in our Paignton studio.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12c1.5-3 3-4.5 4.5-4.5S9 9 10.5 9s3-1.5 4.5-1.5S18 9 19.5 9 21 7.5 22 6"/>
+              <path d="M2 17c1.5-3 3-4.5 4.5-4.5S9 14 10.5 14s3-1.5 4.5-1.5S18 14 19.5 14 21 12.5 22 11"/>
+            </svg>
+          </div>
+          <h3>Swedish Massage</h3>
+          <div class="svc-duration">60 or 90 min</div>
+          <p>Full-body relaxation using long, flowing strokes to ease muscle tension, improve circulation and calm the nervous system. Ideal for first-time clients.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="4" rx="2"/>
+              <rect x="3" y="10" width="18" height="4" rx="2"/>
+              <rect x="3" y="16" width="18" height="4" rx="2"/>
+            </svg>
+          </div>
+          <h3>Deep Tissue Massage</h3>
+          <div class="svc-duration">60 or 90 min</div>
+          <p>Firm, focused pressure targeting deeper muscle layers to release chronic tightness and knots caused by posture, injury or repetitive strain.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <h3>Sports Massage</h3>
+          <div class="svc-duration">45 or 60 min</div>
+          <p>Pre- and post-event therapy to enhance performance, speed recovery and reduce injury risk. Suited to athletes and active individuals of all levels.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="6"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
+          </div>
+          <h3>Soft Tissue Therapy</h3>
+          <div class="svc-duration">60 min</div>
+          <p>A clinical, assessment-led approach targeting dysfunction in muscle, fascia and connective tissue. Highly effective for persistent pain and injury rehab.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="15" rx="8" ry="4"/>
+              <path d="M8 10c0-2.2 1.8-4 4-4s4 1.8 4 4"/>
+              <path d="M10 7c.4-1.5 1.1-2.5 2-3 .9.5 1.6 1.5 2 3"/>
+            </svg>
+          </div>
+          <h3>Hot Stone Therapy</h3>
+          <div class="svc-duration">75 or 90 min</div>
+          <p>Smooth, heated basalt stones glide over tense muscles to melt away deep-held stress and stiffness. A profoundly warming and restorative experience.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3>Pregnancy Massage</h3>
+          <div class="svc-duration">60 min</div>
+          <p>Gentle, side-lying massage adapted to safely support wellbeing throughout pregnancy. Relieves back pain, swelling and tension with care for mother and baby.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Client testimonials</span>
+        <h2 class="section-title">Trusted by <em>Torbay</em></h2>
+      </div>
+      <div class="reviews-score">
+        <span class="big-stars">★★★★★</span>
+        <div class="reviews-score-text">
+          <strong>4.8 out of 5</strong>
+          <span>Based on 126 Google Reviews</span>
+        </div>
+      </div>
+      <!-- PLACEHOLDER: replace with real reviews -->
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"I came in with a shoulder that had been painful for months. After two sessions of soft tissue therapy it was transformed. The assessment process alone showed how thorough and professional they are."</blockquote>
+          <div class="review-author">Sarah M.</div>
+          <div class="review-location">Torquay</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"The deep tissue massage was firm but never uncomfortable. I slept better than I have in years that night. Already booked in monthly. Cannot recommend enough."</blockquote>
+          <div class="review-author">Mark W.</div>
+          <div class="review-location">Paignton</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Booked a pregnancy massage at 30 weeks and felt like a completely different person afterwards. So calm, professional and caring. The studio is beautiful and I felt completely at ease."</blockquote>
+          <div class="review-author">Rachel H.</div>
+          <div class="review-location">Brixham</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <!-- PLACEHOLDER: replace with real studio or therapist photo -->
+        <div class="about-img"></div>
+        <div>
+          <span class="section-eyebrow">Our story</span>
+          <h2>Qualified therapy, <em>rooted in results</em></h2>
+          <p class="about-text">True Health Massage was founded in 2019 with one aim: to offer genuinely effective hands-on therapy to the people of Paignton and the wider Torbay area. Our therapists hold Level 5 Diplomas in Soft Tissue Therapy and are registered with the CNHC, so you can trust your care is in qualified, professional hands.</p>
+          <p class="about-text">We keep our appointment book focused so that every client receives full attention, a thorough consultation and a treatment plan built around their specific needs. No rushing, no guesswork. Just skilled, thoughtful therapy.</p>
+          <ul class="about-features">
+            <li><span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>CNHC Registered</li>
+            <li><span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Level 5 Soft Tissue Diploma</li>
+            <li><span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Fully Insured Practice</li>
+            <li><span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Tailored Treatment Plans</li>
+            <li><span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Paignton Town Centre Studio</li>
+            <li><span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Evening Appointments Available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info">
+          <span class="section-eyebrow">Get in touch</span>
+          <h2>Ready to <em>book your treatment?</em></h2>
+          <p>Fill in the form and we will be in touch within one working day to confirm your appointment. Or call us directly to speak with a therapist.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.91-1.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 15.28z"/>
+                </svg>
+              </span>
+              <!-- PLACEHOLDER: replace with real phone number -->
+              <a href="tel:01803000000">01803 000000</a>
+            </div>
+            <div class="contact-detail">
+              <span class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </span>
+              <!-- PLACEHOLDER: replace with real email address -->
+              <a href="mailto:info@truehealthmassage.co.uk">info@truehealthmassage.co.uk</a>
+            </div>
+            <div class="contact-detail">
+              <span class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <!-- PLACEHOLDER: replace with real address -->
+              <span>12 Palace Avenue, Paignton, TQ3 3EL</span>
+            </div>
+            <div class="contact-detail">
+              <span class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </span>
+              <span>Mon to Fri: 9am to 7pm. Saturday: 9am to 4pm.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Book your session</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="07700 000000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="treatment">Treatment</label>
+              <select id="treatment" name="treatment">
+                <option value="">Please select a treatment</option>
+                <option>Swedish Massage</option>
+                <option>Deep Tissue Massage</option>
+                <option>Sports Massage</option>
+                <option>Soft Tissue Therapy</option>
+                <option>Hot Stone Therapy</option>
+                <option>Pregnancy Massage</option>
+                <option>Not sure, please advise me</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Notes</label>
+              <textarea id="message" name="message" placeholder="Any specific areas of concern, injuries or questions..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-name">True Health Massage</div>
+          <div class="footer-tag">Massage &amp; Soft Tissue Therapy · Paignton</div>
+          <p>A dedicated massage and soft tissue therapy studio in Paignton, South Devon. CNHC registered, Level 5 qualified and committed to your recovery and wellbeing.</p>
+          <div class="footer-socials">
+            <span class="footer-social" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>
+            <span class="footer-social" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </span>
+            <span class="footer-social" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Treatments</h4>
+          <ul>
+            <li><a href="#services">Swedish Massage</a></li>
+            <li><a href="#services">Deep Tissue Massage</a></li>
+            <li><a href="#services">Sports Massage</a></li>
+            <li><a href="#services">Soft Tissue Therapy</a></li>
+            <li><a href="#services">Hot Stone Therapy</a></li>
+            <li><a href="#services">Pregnancy Massage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul>
+            <!-- PLACEHOLDER: replace with real address and contact details -->
+            <li>12 Palace Avenue</li>
+            <li>Paignton, TQ3 3EL</li>
+            <li><a href="tel:01803000000">01803 000000</a></li>
+            <li><a href="mailto:info@truehealthmassage.co.uk">info@...</a></li>
+            <li>Mon to Fri: 9am to 7pm</li>
+            <li>Saturday: 9am to 4pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 True Health Massage. All rights reserved.</span>
+        <span>Paignton, South Devon, TQ3 3EL</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP BUTTON -->
+  <!-- PLACEHOLDER: replace with real WhatsApp number -->
+  <a href="https://wa.me/441803000000" class="whatsapp-btn" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+    <span class="wa-label">WhatsApp</span>
+  </a>
+
+</body>
+</html>
