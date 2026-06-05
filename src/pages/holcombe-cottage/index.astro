@@ -712,15 +712,34 @@
       .hero-inner { padding: 88px 1.5rem 4rem; }
 
       .booking-widget {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: 100%;
+        border-radius: 8px;
       }
       .booking-field {
         border-right: none;
         border-bottom: 1px solid var(--border);
-        padding: 1rem 1.25rem;
+        padding: 1.1rem 1.2rem;
       }
-      .booking-cta-btn { padding: 1.1rem 1.5rem; min-width: auto; }
+      .booking-widget .booking-field:first-child {
+        border-right: 1px solid var(--border);
+      }
+      .booking-widget .booking-field:nth-child(3) {
+        grid-column: span 2;
+        border-bottom: none;
+      }
+      .booking-field input[type="date"] { font-size: 0.95rem; }
+      .booking-cta-btn {
+        grid-column: span 2;
+        padding: 1.25rem 1.5rem;
+        min-width: auto;
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+      }
+      .guest-btn { width: 38px; height: 38px; font-size: 1.2rem; }
 
       .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .about-stats { grid-template-columns: 1fr 1fr; }
