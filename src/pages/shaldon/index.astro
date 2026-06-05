@@ -143,12 +143,12 @@
     .hero-content {
       position: relative; z-index: 1;
       max-width: 820px; margin: 0 auto;
-      padding: 4rem 1.5rem 6rem;
+      padding: 3rem 1.5rem 3.5rem;
     }
 
     .hero-badge {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.35rem 1rem; margin-bottom: 1.75rem;
+      padding: 0.35rem 1rem; margin-bottom: 1.25rem;
       background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.22);
       border-radius: 50px;
       font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
@@ -168,11 +168,11 @@
       font-size: clamp(1.1rem, 2.5vw, 1.4rem);
       font-weight: 400; font-style: italic;
       color: rgba(255,255,255,0.85);
-      margin-bottom: 2.75rem;
+      margin-bottom: 1.75rem;
       letter-spacing: 0.01em;
     }
 
-    .hero-search { max-width: 580px; margin: 0 auto 2.5rem; }
+    .hero-search { max-width: 580px; margin: 0 auto 1.75rem; }
 
     .hero-search-form {
       display: flex; align-items: center;
@@ -224,6 +224,15 @@
     }
 
     @keyframes bob { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(5px); } }
+
+    @media (min-width: 769px) {
+      .hero { height: calc(100vh - 88px); min-height: 480px; }
+      .hero-content { padding: 1rem 1.5rem 1.25rem; }
+      .hero h1 { font-size: clamp(2.8rem, 5.5vw, 4.25rem); margin-bottom: 0.5rem; }
+      .hero-tagline { margin-bottom: 0.875rem; }
+      .hero-badge { margin-bottom: 0.625rem; }
+      .hero-search { margin-bottom: 0.875rem; }
+    }
 
     /* ===================== SECTION COMMON ===================== */
     .section       { padding: 5.5rem 0; }
@@ -606,8 +615,7 @@
   <div class="header-top">
     <div class="container">
       <a href="#" class="nav-logo">
-        <span class="logo-main">Shaldon</span>
-        <span class="logo-sub">Village, Devon</span>
+        <span class="logo-main">Shaldon Village</span>
       </a>
 
       <div class="header-top-right">
@@ -1255,8 +1263,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="nav-logo">
-          <span class="logo-main">Shaldon</span>
-          <span class="logo-sub">Village, Devon</span>
+          <span class="logo-main">Shaldon Village</span>
         </div>
         <p>Your guide to life in one of Devon's most beautiful villages. Visitor information, local news, events and community resources all in one place.</p>
         <div class="footer-social">

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="386" height="92" viewBox="0 0 386 92" role="img" aria-labelledby="title desc">
+  <title id="title">ProCleanSW logo reversed</title>
+  <desc id="desc">White ProCleanSW wordmark with a blue cleaning sparkle icon and pink accent.</desc>
+  <rect width="386" height="92" fill="#10224A"/>
+  <g transform="translate(12 12)">
+    <rect width="68" height="68" rx="16" fill="#1A4DC8"/>
+    <path d="M34 12l-5.9 17.9L10 34l18.1 4.1L34 56l5.9-17.9L58 34l-18.1-4.1L34 12z" fill="#ffffff"/>
+    <path d="M48.6 11.4l-1.7 5.1-5.1 1.7 5.1 1.7 1.7 5.1 1.7-5.1 5.1-1.7-5.1-1.7-1.7-5.1z" fill="#7DE7C4"/>
+    <path d="M20 48.5c9.5 7.8 25.6 7.7 35.5-2.8" fill="none" stroke="#D63080" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+  <text x="101" y="53" fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="900">ProClean</text>
+  <text x="265" y="53" fill="#74A2FF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="900">S</text>
+  <text x="287" y="53" fill="#F46CAE" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="900">W</text>
+  <path d="M102 64h182" fill="none" stroke="#263A68" stroke-width="6" stroke-linecap="round"/>
+  <path d="M102 64h118" fill="none" stroke="#7DE7C4" stroke-width="6" stroke-linecap="round"/>
+</svg>

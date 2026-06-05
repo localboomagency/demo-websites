@@ -1,5 +1,16 @@
 ---
 import { sites } from '../data/sites.js';
+
+const locationCounts = {};
+const industryCounts = {};
+
+for (const site of sites) {
+  if (site.location) locationCounts[site.location] = (locationCounts[site.location] || 0) + 1;
+  if (site.industry) industryCounts[site.industry] = (industryCounts[site.industry] || 0) + 1;
+}
+
+const locations = Object.entries(locationCounts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+const industries = Object.entries(industryCounts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 ---
 
 <!DOCTYPE html>
@@ -19,9 +30,32 @@ import { sites } from '../data/sites.js';
     </header>
 
     <main>
+      <div class="filters">
+        <div class="filter-row">
+          <span class="filter-label">Locations</span>
+          <div class="filter-pills">
+            {locations.map(([loc, count]) => (
+              <button class="pill pill-location" data-filter-type="location" data-filter-value={loc}>
+                {loc} ({count})
+              </button>
+            ))}
+          </div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label">Industries</span>
+          <div class="filter-pills">
+            {industries.map(([ind, count]) => (
+              <button class="pill pill-industry" data-filter-type="industry" data-filter-value={ind}>
+                {ind} ({count})
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div class="grid">
         {sites.map(site => (
-          <a href={site.path} class="card">
+          <a href={site.path} class="card" data-location={site.location || ''} data-industry={site.industry || ''}>
             <div class="card-logo" style={`background: ${site.logo.bg};`}>
               {site.logo.type === 'image' ? (
                 <img
@@ -47,11 +81,51 @@ import { sites } from '../data/sites.js';
           </a>
         ))}
       </div>
+
+      <p class="no-results" id="no-results" style="display:none">No sites match this filter.</p>
     </main>
 
     <footer>
       <p>Web Design Agency Demo Platform</p>
     </footer>
+
+    <script>
+      const pills = document.querySelectorAll('.pill[data-filter-type]');
+      const cards = document.querySelectorAll('.card[data-location]');
+      const noResults = document.getElementById('no-results');
+      let activeType = null;
+      let activeValue = null;
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const type = pill.dataset.filterType;
+          const value = pill.dataset.filterValue;
+
+          if (activeType === type && activeValue === value) {
+            // Toggle off
+            pill.classList.remove('active');
+            activeType = null;
+            activeValue = null;
+          } else {
+            pills.forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+            activeType = type;
+            activeValue = value;
+          }
+
+          let visible = 0;
+          cards.forEach(card => {
+            const show = !activeType
+              || (activeType === 'location' && card.dataset.location === activeValue)
+              || (activeType === 'industry' && card.dataset.industry === activeValue);
+            card.style.display = show ? '' : 'none';
+            if (show) visible++;
+          });
+
+          noResults.style.display = visible === 0 ? '' : 'none';
+        });
+      });
+    </script>
   </body>
 </html>
 
@@ -97,6 +171,92 @@ import { sites } from '../data/sites.js';
     width: 100%;
   }
 
+  /* Filter bar */
+  .filters {
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .filter-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    min-width: 70px;
+    padding-top: 6px;
+    flex-shrink: 0;
+  }
+
+  .filter-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .pill {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 4px 11px;
+    border-radius: 99px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    line-height: 1.5;
+    font-family: inherit;
+  }
+
+  .pill-location {
+    background: #f0fdf4;
+    color: #15803d;
+    border-color: #bbf7d0;
+  }
+
+  .pill-location:hover {
+    background: #dcfce7;
+    border-color: #86efac;
+  }
+
+  .pill-location.active {
+    background: #15803d;
+    color: #fff;
+    border-color: #15803d;
+  }
+
+  .pill-industry {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-color: #bfdbfe;
+  }
+
+  .pill-industry:hover {
+    background: #dbeafe;
+    border-color: #93c5fd;
+  }
+
+  .pill-industry.active {
+    background: #1d4ed8;
+    color: #fff;
+    border-color: #1d4ed8;
+  }
+
+  .no-results {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.9375rem;
+    padding: 48px 0;
+  }
+
+  /* Grid */
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -212,6 +372,9 @@ import { sites } from '../data/sites.js';
     }
     .grid {
       grid-template-columns: 1fr;
+    }
+    .filter-label {
+      min-width: 60px;
     }
   }
 </style>

@@ -4,7 +4,7 @@ export const sites = [
     path: '/bakery',
     screenshot: '/screenshots/bakery.svg',
     industry: 'Bakery',
-    location: 'Plymouth City Centre',
+    location: 'Plymouth',
     logo: {
       type: 'text',
       text: 'The Artisan Bakery',
@@ -126,7 +126,7 @@ export const sites = [
     path: '/shaldon',
     screenshot: '/screenshots/shaldon.svg',
     industry: 'Village Information',
-    location: 'Shaldon, Devon',
+    location: 'Teignmouth',
     logo: {
       type: 'text',
       text: 'Shaldon',

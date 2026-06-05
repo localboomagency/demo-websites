@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">ProCleanSW icon</title>
+  <desc id="desc">Blue rounded square cleaning sparkle icon with pink and mint accents.</desc>
+  <rect width="96" height="96" rx="22" fill="#1A4DC8"/>
+  <path d="M48 17l-8.4 25.3L14 48l25.6 5.7L48 79l8.4-25.3L82 48l-25.6-5.7L48 17z" fill="#ffffff"/>
+  <path d="M68.6 16.2l-2.4 7.2-7.2 2.4 7.2 2.4 2.4 7.2 2.4-7.2 7.2-2.4-7.2-2.4-2.4-7.2z" fill="#7DE7C4"/>
+  <path d="M28 69c13.6 10.5 36 10.2 49-4.2" fill="none" stroke="#D63080" stroke-width="6" stroke-linecap="round"/>
+</svg>
